@@ -143,6 +143,13 @@ body[data-route="/faq"] .accordion details[open],body[data-route="/faq"] .accord
 @media(hover:hover) and (pointer:fine){body[data-route="/resources"] .resource-card:hover{transform:translateY(-5px);box-shadow:0 16px 30px #263C4C18;border-color:var(--folio-edge)}body[data-route="/resources"] .resource-card:hover:before{transform:scaleY(1)}body[data-route="/resources"] .resource-card:hover:after{transform:translate(0,0)}body[data-route="/resources"] .resource-card:hover>img{transform:translateY(-3px)}body[data-route="/resources"] .resource-card:hover .text-link .icon{transform:translateX(3px)}body[data-route="/resources/method-and-sources"] .editorial-card:hover,body[data-route="/resources/sample-dossier"] .packet-toc>div:hover{transform:translateY(-4px);border-color:#667F99;box-shadow:0 12px 24px #263C4C12}body[data-route="/resources/method-and-sources"] .source-register article:hover,body[data-route="/resources/method-and-sources"] .source-register article:focus-within{background:#F5EDCE;border-color:#B89A49;box-shadow:0 5px 15px #263C4C0C}body[data-route="/faq"] .accordion details:hover{background:#F5EDCE;box-shadow:0 5px 15px #263C4C09}}
 @media(prefers-reduced-motion:reduce){:is(body[data-route^="/resources"],body[data-route="/faq"]) :is(.resource-card,.resource-card:before,.resource-card:after,.resource-card>img,.text-link .icon,.editorial-card,.packet-toc>div,.source-register article,.accordion details){transition:none}:is(body[data-route^="/resources"],body[data-route="/faq"]) :is(.resource-card:hover,.resource-card:hover>img,.resource-card:hover .text-link .icon,.editorial-card:hover,.packet-toc>div:hover){transform:none}}
 
+
+/* Preview access: sage paper with an understated evidence-atlas backdrop. */
+body[data-route="/sign-in"] .access-page{background-color:#D6E1D5;background-image:linear-gradient(90deg,#D6E1D500,#D6E1D560),url('/assets/textures/evidence-atlas.svg'),url('/assets/textures/docket-paper.svg');background-size:auto,cover,180px 180px;background-position:center;--sk-muted:#48585F}
+body[data-route="/sign-in"] .access-page .eyebrow{color:#803531}
+body[data-route="/sign-in"] .access-page h1 em{color:#98433B}
+body[data-route="/sign-in"] .access-panel{background:#FFFDF8;border-color:#263C4C30;box-shadow:0 18px 48px #263C4C14}
+
 @media print{.site-header,.site-status,.site-footer,.demo-topbar,.workbench-sidebar,.panel-actions,dialog,.toast{display:none}.container{width:100%;max-width:none}.section,.demo-shell{padding:20px 0}.workbench-layout{display:block}.record-state-grid{grid-template-columns:repeat(5,1fr)}.review-pair{grid-template-columns:1fr 1fr}}
 
 .hero-ledger .hero-asset-note{color:#D5D2CA}.hero-ledger .hero-figure>.badge{background:var(--sk-cream)}
