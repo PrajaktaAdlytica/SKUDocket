@@ -1,0 +1,483 @@
+[
+  {
+    "route": "/",
+    "key": "home",
+    "heroName": "Harbor atlas",
+    "heroLayout": "Centered editorial hero above coastal scene and readable dossier spread",
+    "heroAsset": "illustrations/harbor-atlas.webp",
+    "supportAssets": [
+      "visuals/reviewed-workflow.svg",
+      "visuals/origin-checklist.svg",
+      "visuals/screening-identifiers.svg",
+      "visuals/workspace-relationships.svg"
+    ],
+    "cta": "Explore the demo",
+    "background": "cream except controls ink chapter",
+    "mobile": "Stack in reading order; preserve status/source date; 20px margin at 390px",
+    "motion": "User-driven evidence selection; native scroll; complete reduced-motion still state"
+  },
+  {
+    "route": "/products",
+    "key": "products",
+    "heroName": "Five-offer index",
+    "heroLayout": "Left editorial title and offset five-module index",
+    "heroAsset": "visuals/product-offers.svg",
+    "supportAssets": [
+      "visuals/classification-comparison.svg",
+      "visuals/origin-checklist.svg",
+      "visuals/screening-identifiers.svg",
+      "visuals/landed-cost-bars.svg",
+      "visuals/broker-packet-provenance.svg"
+    ],
+    "cta": "Choose an offer",
+    "background": "cream except controls ink chapter",
+    "mobile": "Stack in reading order; preserve status/source date; 20px margin at 390px",
+    "motion": "User-driven evidence selection; native scroll; complete reduced-motion still state"
+  },
+  {
+    "route": "/products/classification-dossiers",
+    "key": "classification",
+    "heroName": "Comparison spread",
+    "heroLayout": "Title and source-margin pair above wide two-rationale spread",
+    "heroAsset": "visuals/classification-comparison.svg",
+    "supportAssets": [
+      "visuals/review-revision.svg",
+      "visuals/evidence-gap.svg",
+      "visuals/broker-annotations.svg"
+    ],
+    "cta": "Compare HX-42 rationales",
+    "background": "cream except controls ink chapter",
+    "mobile": "Stack in reading order; preserve status/source date; 20px margin at 390px",
+    "motion": "User-driven evidence selection; native scroll; complete reduced-motion still state"
+  },
+  {
+    "route": "/products/origin-evidence",
+    "key": "origin",
+    "heroName": "Missing-proof folio",
+    "heroLayout": "Checklist-led asymmetric hero with supplier evidence rail",
+    "heroAsset": "visuals/origin-checklist.svg",
+    "supportAssets": [
+      "visuals/evidence-gap.svg",
+      "visuals/importer-suppliers.svg",
+      "visuals/source-dates.svg"
+    ],
+    "cta": "Inspect missing proof",
+    "background": "cream except controls ink chapter",
+    "mobile": "Stack in reading order; preserve status/source date; 20px margin at 390px",
+    "motion": "User-driven evidence selection; native scroll; complete reduced-motion still state"
+  },
+  {
+    "route": "/products/screening-review",
+    "key": "screening",
+    "heroName": "Identity comparison",
+    "heroLayout": "Two identity blocks separated by unresolved-match review rail",
+    "heroAsset": "visuals/screening-identifiers.svg",
+    "supportAssets": [
+      "visuals/human-disposition.svg",
+      "visuals/controls-matrix.svg",
+      "visuals/source-dates.svg"
+    ],
+    "cta": "Review the example match",
+    "background": "cream except controls ink chapter",
+    "mobile": "Stack in reading order; preserve status/source date; 20px margin at 390px",
+    "motion": "User-driven evidence selection; native scroll; complete reduced-motion still state"
+  },
+  {
+    "route": "/products/landed-cost",
+    "key": "landed-cost",
+    "heroName": "Scenario ledger",
+    "heroLayout": "Horizontal included-cost comparison with assumption drawer",
+    "heroAsset": "visuals/landed-cost-bars.svg",
+    "supportAssets": [
+      "visuals/cost-waterfall.svg",
+      "visuals/tariff-change-line.svg",
+      "visuals/review-revision.svg"
+    ],
+    "cta": "Compare scenarios",
+    "background": "cream except controls ink chapter",
+    "mobile": "Stack in reading order; preserve status/source date; 20px margin at 390px",
+    "motion": "User-driven evidence selection; native scroll; complete reduced-motion still state"
+  },
+  {
+    "route": "/products/broker-packets",
+    "key": "broker-packets",
+    "heroName": "Packet manifest",
+    "heroLayout": "Oversized document edge beside source manifest connectors",
+    "heroAsset": "visuals/broker-packet-provenance.svg",
+    "supportAssets": [
+      "visuals/sample-dossier.svg",
+      "visuals/broker-annotations.svg",
+      "visuals/demo-packet.svg"
+    ],
+    "cta": "Preview sample packet",
+    "background": "cream except controls ink chapter",
+    "mobile": "Stack in reading order; preserve status/source date; 20px margin at 390px",
+    "motion": "User-driven evidence selection; native scroll; complete reduced-motion still state"
+  },
+  {
+    "route": "/workspace",
+    "key": "workspace",
+    "heroName": "Evidence relationships",
+    "heroLayout": "Wide relationship map and margin glossary",
+    "heroAsset": "visuals/workspace-relationships.svg",
+    "supportAssets": [
+      "visuals/demo-queue.svg",
+      "visuals/review-revision.svg",
+      "visuals/controls-matrix.svg"
+    ],
+    "cta": "Follow the workflow",
+    "background": "cream except controls ink chapter",
+    "mobile": "Stack in reading order; preserve status/source date; 20px margin at 390px",
+    "motion": "User-driven evidence selection; native scroll; complete reduced-motion still state"
+  },
+  {
+    "route": "/how-it-works",
+    "key": "how-it-works",
+    "heroName": "Reviewed sequence",
+    "heroLayout": "Three stages across ruled editorial panels",
+    "heroAsset": "visuals/reviewed-workflow.svg",
+    "supportAssets": [
+      "visuals/evidence-gap.svg",
+      "visuals/human-disposition.svg",
+      "visuals/broker-packet-provenance.svg"
+    ],
+    "cta": "Explore the demo",
+    "background": "cream except controls ink chapter",
+    "mobile": "Stack in reading order; preserve status/source date; 20px margin at 390px",
+    "motion": "User-driven evidence selection; native scroll; complete reduced-motion still state"
+  },
+  {
+    "route": "/for-importers",
+    "key": "importers",
+    "heroName": "Supplier lanes",
+    "heroLayout": "One SKU and three independent supplier evidence paths",
+    "heroAsset": "visuals/importer-suppliers.svg",
+    "supportAssets": [
+      "visuals/origin-checklist.svg",
+      "visuals/pilot-scorecard.svg",
+      "visuals/data-licensing.svg"
+    ],
+    "cta": "Discuss a pilot",
+    "background": "cream except controls ink chapter",
+    "mobile": "Stack in reading order; preserve status/source date; 20px margin at 390px",
+    "motion": "User-driven evidence selection; native scroll; complete reduced-motion still state"
+  },
+  {
+    "route": "/for-brokers",
+    "key": "brokers",
+    "heroName": "Annotated packet",
+    "heroLayout": "A readable report with precise reviewer margin notes",
+    "heroAsset": "visuals/broker-annotations.svg",
+    "supportAssets": [
+      "visuals/broker-packet-provenance.svg",
+      "visuals/review-revision.svg",
+      "visuals/pilot-scorecard.svg"
+    ],
+    "cta": "Discuss broker participation",
+    "background": "cream except controls ink chapter",
+    "mobile": "Stack in reading order; preserve status/source date; 20px margin at 390px",
+    "motion": "User-driven evidence selection; native scroll; complete reduced-motion still state"
+  },
+  {
+    "route": "/demo",
+    "key": "demo",
+    "heroName": "Guided decision",
+    "heroLayout": "Large start control beside three deterministic steps",
+    "heroAsset": "visuals/demo-orientation.svg",
+    "supportAssets": [
+      "visuals/demo-queue.svg",
+      "visuals/demo-record.svg",
+      "visuals/demo-packet.svg"
+    ],
+    "cta": "Open synthetic queue",
+    "background": "cream except controls ink chapter",
+    "mobile": "Stack in reading order; preserve status/source date; 20px margin at 390px",
+    "motion": "User-driven evidence selection; native scroll; complete reduced-motion still state"
+  },
+  {
+    "route": "/demo/skus",
+    "key": "demo-skus",
+    "heroName": "Review queue",
+    "heroLayout": "Dense but readable product queue; no marketing hero",
+    "heroAsset": "visuals/demo-queue.svg",
+    "supportAssets": [
+      "visuals/queue-donut.svg",
+      "visuals/controls-matrix.svg"
+    ],
+    "cta": "Open HX-42",
+    "background": "cream except controls ink chapter",
+    "mobile": "Stack in reading order; preserve status/source date; 20px margin at 390px",
+    "motion": "User-driven evidence selection; native scroll; complete reduced-motion still state"
+  },
+  {
+    "route": "/demo/skus/hx-42",
+    "key": "demo-hx42",
+    "heroName": "Opened record",
+    "heroLayout": "Record summary, comparison and source pane",
+    "heroAsset": "visuals/demo-record.svg",
+    "supportAssets": [
+      "visuals/classification-comparison.svg",
+      "visuals/origin-checklist.svg",
+      "visuals/screening-identifiers.svg",
+      "visuals/landed-cost-bars.svg"
+    ],
+    "cta": "Review blockers",
+    "background": "cream except controls ink chapter",
+    "mobile": "Stack in reading order; preserve status/source date; 20px margin at 390px",
+    "motion": "User-driven evidence selection; native scroll; complete reduced-motion still state"
+  },
+  {
+    "route": "/demo/packets/dkt-hx42-v1",
+    "key": "demo-packet",
+    "heroName": "Synthetic report",
+    "heroLayout": "Document cover, manifest and explicit open questions",
+    "heroAsset": "visuals/demo-packet.svg",
+    "supportAssets": [
+      "visuals/sample-dossier.svg",
+      "visuals/broker-packet-provenance.svg"
+    ],
+    "cta": "View provenance",
+    "background": "cream except controls ink chapter",
+    "mobile": "Stack in reading order; preserve status/source date; 20px margin at 390px",
+    "motion": "User-driven evidence selection; native scroll; complete reduced-motion still state"
+  },
+  {
+    "route": "/pilot",
+    "key": "pilot",
+    "heroName": "Ten-SKU scorecard",
+    "heroLayout": "Worktable illustration and evaluation matrix with blank outcomes",
+    "heroAsset": "visuals/pilot-scorecard.svg",
+    "supportAssets": [
+      "visuals/pricing-scope.svg",
+      "visuals/data-licensing.svg",
+      "visuals/controls-matrix.svg"
+    ],
+    "cta": "Discuss a scoped pilot",
+    "background": "cream except controls ink chapter",
+    "mobile": "Stack in reading order; preserve status/source date; 20px margin at 390px",
+    "motion": "User-driven evidence selection; native scroll; complete reduced-motion still state"
+  },
+  {
+    "route": "/pricing",
+    "key": "pricing",
+    "heroName": "Bounded proposal",
+    "heroLayout": "Paper proposal hero with selected scope and hypothetical price",
+    "heroAsset": "visuals/pricing-scope.svg",
+    "supportAssets": [
+      "visuals/pilot-scorecard.svg",
+      "visuals/product-offers.svg",
+      "visuals/terms-boundary.svg"
+    ],
+    "cta": "Discuss scope",
+    "background": "cream except controls ink chapter",
+    "mobile": "Stack in reading order; preserve status/source date; 20px margin at 390px",
+    "motion": "User-driven evidence selection; native scroll; complete reduced-motion still state"
+  },
+  {
+    "route": "/request-demo",
+    "key": "request-demo",
+    "heroName": "Walkthrough brief",
+    "heroLayout": "Minimal agenda left, labeled inquiry form right",
+    "heroAsset": "visuals/request-demo.svg",
+    "supportAssets": [
+      "visuals/product-offers.svg",
+      "visuals/waitlist-consent.svg"
+    ],
+    "cta": "Request a walkthrough",
+    "background": "cream except controls ink chapter",
+    "mobile": "Stack in reading order; preserve status/source date; 20px margin at 390px",
+    "motion": "User-driven evidence selection; native scroll; complete reduced-motion still state"
+  },
+  {
+    "route": "/request-pilot",
+    "key": "request-pilot",
+    "heroName": "Lane intake",
+    "heroLayout": "Lane scope left; progressive qualification form right",
+    "heroAsset": "visuals/request-pilot.svg",
+    "supportAssets": [
+      "visuals/pilot-scorecard.svg",
+      "visuals/privacy-flow.svg"
+    ],
+    "cta": "Discuss pilot fit",
+    "background": "cream except controls ink chapter",
+    "mobile": "Stack in reading order; preserve status/source date; 20px margin at 390px",
+    "motion": "User-driven evidence selection; native scroll; complete reduced-motion still state"
+  },
+  {
+    "route": "/waitlist",
+    "key": "waitlist",
+    "heroName": "Consented postcard",
+    "heroLayout": "Compact warm letter layout with separate updates opt-in",
+    "heroAsset": "visuals/waitlist-consent.svg",
+    "supportAssets": [
+      "visuals/privacy-flow.svg"
+    ],
+    "cta": "Join research updates",
+    "background": "cream except controls ink chapter",
+    "mobile": "Stack in reading order; preserve status/source date; 20px margin at 390px",
+    "motion": "User-driven evidence selection; native scroll; complete reduced-motion still state"
+  },
+  {
+    "route": "/controls",
+    "key": "controls",
+    "heroName": "Authority matrix",
+    "heroLayout": "Dark ink title and light control matrix, no certification seals",
+    "heroAsset": "visuals/controls-matrix.svg",
+    "supportAssets": [
+      "visuals/review-revision.svg",
+      "visuals/data-licensing.svg",
+      "visuals/terms-boundary.svg"
+    ],
+    "cta": "Inspect source coverage",
+    "background": "cream except controls ink chapter",
+    "mobile": "Stack in reading order; preserve status/source date; 20px margin at 390px",
+    "motion": "User-driven evidence selection; native scroll; complete reduced-motion still state"
+  },
+  {
+    "route": "/resources",
+    "key": "resources",
+    "heroName": "Evidence library",
+    "heroLayout": "Publication index with three different resource visuals",
+    "heroAsset": "visuals/resources-index.svg",
+    "supportAssets": [
+      "visuals/sample-dossier.svg",
+      "visuals/source-dates.svg",
+      "visuals/faq-questions.svg"
+    ],
+    "cta": "Open a resource",
+    "background": "cream except controls ink chapter",
+    "mobile": "Stack in reading order; preserve status/source date; 20px margin at 390px",
+    "motion": "User-driven evidence selection; native scroll; complete reduced-motion still state"
+  },
+  {
+    "route": "/resources/sample-dossier",
+    "key": "sample-dossier",
+    "heroName": "Annotated evidence",
+    "heroLayout": "Large numbered document spread with margin links",
+    "heroAsset": "visuals/sample-dossier.svg",
+    "supportAssets": [
+      "visuals/classification-comparison.svg",
+      "visuals/broker-packet-provenance.svg"
+    ],
+    "cta": "Open matching demo",
+    "background": "cream except controls ink chapter",
+    "mobile": "Stack in reading order; preserve status/source date; 20px margin at 390px",
+    "motion": "User-driven evidence selection; native scroll; complete reduced-motion still state"
+  },
+  {
+    "route": "/resources/method-and-sources",
+    "key": "method",
+    "heroName": "Source register",
+    "heroLayout": "Editorial source column and distinct publication/effective/retrieval timeline",
+    "heroAsset": "visuals/source-dates.svg",
+    "supportAssets": [
+      "visuals/data-licensing.svg",
+      "visuals/origin-checklist.svg",
+      "visuals/screening-identifiers.svg"
+    ],
+    "cta": "Inspect a source",
+    "background": "cream except controls ink chapter",
+    "mobile": "Stack in reading order; preserve status/source date; 20px margin at 390px",
+    "motion": "User-driven evidence selection; native scroll; complete reduced-motion still state"
+  },
+  {
+    "route": "/faq",
+    "key": "faq",
+    "heroName": "Buyer questions",
+    "heroLayout": "Short heading with question index, no oversized dashboard",
+    "heroAsset": "visuals/faq-questions.svg",
+    "supportAssets": [
+      "visuals/terms-boundary.svg",
+      "visuals/pricing-scope.svg"
+    ],
+    "cta": "Discuss a question",
+    "background": "cream except controls ink chapter",
+    "mobile": "Stack in reading order; preserve status/source date; 20px margin at 390px",
+    "motion": "User-driven evidence selection; native scroll; complete reduced-motion still state"
+  },
+  {
+    "route": "/about",
+    "key": "about",
+    "heroName": "Evidence principles",
+    "heroLayout": "Original review-desk illustration and three editorial principles",
+    "heroAsset": "illustrations/review-desk.webp",
+    "supportAssets": [
+      "visuals/reviewed-workflow.svg",
+      "visuals/workspace-relationships.svg"
+    ],
+    "cta": "Contact SKUDocket",
+    "background": "cream except controls ink chapter",
+    "mobile": "Stack in reading order; preserve status/source date; 20px margin at 390px",
+    "motion": "User-driven evidence selection; native scroll; complete reduced-motion still state"
+  },
+  {
+    "route": "/contact",
+    "key": "contact",
+    "heroName": "Conversation routes",
+    "heroLayout": "Three inquiry paths with individually illustrated envelopes",
+    "heroAsset": "visuals/contact-routes.svg",
+    "supportAssets": [
+      "visuals/privacy-flow.svg"
+    ],
+    "cta": "Choose inquiry purpose",
+    "background": "cream except controls ink chapter",
+    "mobile": "Stack in reading order; preserve status/source date; 20px margin at 390px",
+    "motion": "User-driven evidence selection; native scroll; complete reduced-motion still state"
+  },
+  {
+    "route": "/sign-in",
+    "key": "sign-in",
+    "heroName": "Preview access",
+    "heroLayout": "Compact branded access panel and honest synthetic-workspace choice",
+    "heroAsset": "visuals/preview-access.svg",
+    "supportAssets": [
+      "visuals/demo-orientation.svg"
+    ],
+    "cta": "Enter synthetic workspace",
+    "background": "cream except controls ink chapter",
+    "mobile": "Stack in reading order; preserve status/source date; 20px margin at 390px",
+    "motion": "User-driven evidence selection; native scroll; complete reduced-motion still state"
+  },
+  {
+    "route": "/privacy",
+    "key": "privacy",
+    "heroName": "Data purposes",
+    "heroLayout": "Readable legal hero with small inquiry-data flow",
+    "heroAsset": "visuals/privacy-flow.svg",
+    "supportAssets": [
+      "visuals/waitlist-consent.svg"
+    ],
+    "cta": "Request deletion when connected",
+    "background": "cream except controls ink chapter",
+    "mobile": "Stack in reading order; preserve status/source date; 20px margin at 390px",
+    "motion": "User-driven evidence selection; native scroll; complete reduced-motion still state"
+  },
+  {
+    "route": "/terms",
+    "key": "terms",
+    "heroName": "Scope boundary",
+    "heroLayout": "Quiet typographic legal hero and bounded-scope figure",
+    "heroAsset": "visuals/terms-boundary.svg",
+    "supportAssets": [
+      "visuals/controls-matrix.svg"
+    ],
+    "cta": "Contact",
+    "background": "cream except controls ink chapter",
+    "mobile": "Stack in reading order; preserve status/source date; 20px margin at 390px",
+    "motion": "User-driven evidence selection; native scroll; complete reduced-motion still state"
+  },
+  {
+    "route": "/accessibility",
+    "key": "accessibility",
+    "heroName": "Visible focus",
+    "heroLayout": "Simple editorial statement with focus-path illustration",
+    "heroAsset": "visuals/accessibility-focus.svg",
+    "supportAssets": [
+      "visuals/faq-questions.svg"
+    ],
+    "cta": "Report an issue when connected",
+    "background": "cream except controls ink chapter",
+    "mobile": "Stack in reading order; preserve status/source date; 20px margin at 390px",
+    "motion": "User-driven evidence selection; native scroll; complete reduced-motion still state"
+  }
+]

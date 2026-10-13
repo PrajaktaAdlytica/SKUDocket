@@ -1,0 +1,20 @@
+SKUDocket hero film — concept preview
+
+All organizations, people, documents and records are synthetic. Fixture as of 01 Oct 2026. This is an illustration of a proposed workflow, not an operating product or live source feed.
+
+0:00–0:03 — Evidence comes first.
+The fictional HX-42 stainless fastener assembly from Harborside Works is linked to invoice INV-HW-104-v1 and product facts SPEC-HX42-v1. The invoice has 1,000 units at $12.00 per unit, totaling $12,000.00. Origin affidavit ORG-HX42-v1 is missing.
+
+0:03–0:07 — Compare the assumptions.
+Hypothesis A examines component function. Hypothesis B examines the assembly's combined function. Both proposed US HTS code fields remain unassigned, and both require broker review. Neither rationale is a customs determination.
+
+0:07–0:11 — Open questions stay visible.
+Missing origin proof creates a hold; preference eligibility has not been assessed. A fictional similar-name screening match between Harborside Works and Harborside Industrial Works remains unresolved. It requires human identifier review and official-list checks.
+
+0:11–0:14 — A person owns the next decision.
+Fictional broker reviewer Noah Reed is prompted to review the rationales and evidence, record questions or return the record for revision. No approval, clearance or external action is simulated.
+
+0:14–0:18 — A draft packet, with open issues.
+Draft DKT-HX42-v1 carries invoice and valuation provenance, competing rationales, the origin evidence gap and a screening review log whose human disposition is still pending. Broker sign-off remains pending. A packet for discussion is not a customs filing or customs approval.
+
+The video is silent and loops. The website should provide a pause control and an accessible path to the HTML demo. Under reduced motion, display the complete comparison poster instead of autoplaying the video. At mobile widths, retain the workflow meaning in HTML because desktop document labels are supplementary visual detail.

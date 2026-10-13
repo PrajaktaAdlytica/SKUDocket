@@ -1,0 +1,591 @@
+{
+  "date": "2026-10-13",
+  "route_count": 31,
+  "desktop": [
+    {
+      "brokenImages": [],
+      "h1": "Prepare repeat-SKU\nimport dossiers\nfor broker review.",
+      "h1Count": 1,
+      "hasFooter": true,
+      "route": "/",
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "brokenImages": [],
+      "h1": "Five jobs.\nOne evidence trail.",
+      "h1Count": 1,
+      "hasFooter": true,
+      "route": "/products",
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "brokenImages": [],
+      "h1": "The reasoning behind\na proposed classification.",
+      "h1Count": 1,
+      "hasFooter": true,
+      "route": "/products/classification-dossiers",
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "brokenImages": [],
+      "h1": "Make the missing\nproof visible.",
+      "h1Count": 1,
+      "hasFooter": true,
+      "route": "/products/origin-evidence",
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "brokenImages": [],
+      "h1": "Every potential match\nneeds a human reason.",
+      "h1Count": 1,
+      "hasFooter": true,
+      "route": "/products/screening-review",
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "brokenImages": [],
+      "h1": "The estimate,\nand its assumptions.",
+      "h1Count": 1,
+      "hasFooter": true,
+      "route": "/products/landed-cost",
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "brokenImages": [],
+      "h1": "The evidence behind\nthe broker conversation.",
+      "h1Count": 1,
+      "hasFooter": true,
+      "route": "/products/broker-packets",
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "brokenImages": [],
+      "h1": "A record with\nits relationships intact.",
+      "h1Count": 1,
+      "hasFooter": true,
+      "route": "/workspace",
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "brokenImages": [],
+      "h1": "Collect the evidence.\nReview what is unresolved.\nAssemble the broker packet.",
+      "h1Count": 1,
+      "hasFooter": true,
+      "route": "/how-it-works",
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "brokenImages": [],
+      "h1": "Recurring goods.\nSupplier-specific evidence.",
+      "h1Count": 1,
+      "hasFooter": true,
+      "route": "/for-importers",
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "brokenImages": [],
+      "h1": "Prepared evidence.\nRoom for your judgment.",
+      "h1Count": 1,
+      "hasFooter": true,
+      "route": "/for-brokers",
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "brokenImages": [],
+      "h1": "One repeat lane.\nTen historical SKUs.",
+      "h1Count": 1,
+      "hasFooter": true,
+      "route": "/pilot",
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "brokenImages": [],
+      "h1": "Price the repeat job.\nTest the commitment.",
+      "h1Count": 1,
+      "hasFooter": true,
+      "route": "/pricing",
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "brokenImages": [],
+      "h1": "Authority, sources,\nand a clear stopping point.",
+      "h1Count": 1,
+      "hasFooter": true,
+      "route": "/controls",
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "brokenImages": [],
+      "h1": "Read the record.\nQuestion the source.",
+      "h1Count": 1,
+      "hasFooter": true,
+      "route": "/resources",
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "brokenImages": [],
+      "h1": "HX-42,\nwith the questions intact.",
+      "h1Count": 1,
+      "hasFooter": true,
+      "route": "/resources/sample-dossier",
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "brokenImages": [],
+      "h1Count": 1,
+      "hasFooter": true,
+      "route": "/resources/method-and-sources",
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "brokenImages": [],
+      "h1Count": 1,
+      "hasFooter": true,
+      "route": "/faq",
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "brokenImages": [],
+      "h1Count": 1,
+      "hasFooter": true,
+      "route": "/about",
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "brokenImages": [],
+      "h1Count": 1,
+      "hasFooter": true,
+      "route": "/contact",
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "brokenImages": [],
+      "h1Count": 1,
+      "hasFooter": true,
+      "route": "/request-demo",
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "brokenImages": [],
+      "h1Count": 1,
+      "hasFooter": true,
+      "route": "/request-pilot",
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "brokenImages": [],
+      "h1Count": 1,
+      "hasFooter": true,
+      "route": "/waitlist",
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "brokenImages": [],
+      "h1Count": 1,
+      "hasFooter": true,
+      "route": "/sign-in",
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "brokenImages": [],
+      "h1Count": 1,
+      "hasFooter": true,
+      "route": "/privacy",
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "brokenImages": [],
+      "h1Count": 1,
+      "hasFooter": true,
+      "route": "/terms",
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "brokenImages": [],
+      "h1Count": 1,
+      "hasFooter": true,
+      "route": "/accessibility",
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "brokenImages": [],
+      "h1Count": 1,
+      "hasFooter": true,
+      "route": "/demo",
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "brokenImages": [],
+      "h1Count": 1,
+      "hasFooter": true,
+      "route": "/demo/skus",
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "brokenImages": [],
+      "h1Count": 1,
+      "hasFooter": true,
+      "route": "/demo/skus/hx-42",
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "brokenImages": [],
+      "h1Count": 1,
+      "hasFooter": true,
+      "route": "/demo/packets/dkt-hx42-v1",
+      "scrollWidth": 1440,
+      "width": 1440
+    }
+  ],
+  "mobile": [
+    {
+      "brokenImages": [],
+      "h1Count": 1,
+      "route": "/",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "brokenImages": [],
+      "h1Count": 1,
+      "route": "/products",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "brokenImages": [],
+      "h1Count": 1,
+      "route": "/products/classification-dossiers",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "brokenImages": [],
+      "h1Count": 1,
+      "route": "/products/origin-evidence",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "brokenImages": [],
+      "h1Count": 1,
+      "route": "/products/screening-review",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "brokenImages": [],
+      "h1Count": 1,
+      "route": "/products/landed-cost",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "brokenImages": [],
+      "h1Count": 1,
+      "route": "/products/broker-packets",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "brokenImages": [],
+      "h1Count": 1,
+      "route": "/workspace",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "brokenImages": [],
+      "h1Count": 1,
+      "route": "/how-it-works",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "brokenImages": [],
+      "h1Count": 1,
+      "route": "/for-importers",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "brokenImages": [],
+      "h1Count": 1,
+      "route": "/for-brokers",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "brokenImages": [],
+      "h1Count": 1,
+      "route": "/pilot",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "brokenImages": [],
+      "h1Count": 1,
+      "route": "/pricing",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "brokenImages": [],
+      "h1Count": 1,
+      "route": "/controls",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "brokenImages": [],
+      "h1Count": 1,
+      "route": "/resources",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "brokenImages": [],
+      "h1Count": 1,
+      "route": "/resources/sample-dossier",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "brokenImages": [],
+      "h1Count": 1,
+      "route": "/resources/method-and-sources",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "brokenImages": [],
+      "h1Count": 1,
+      "route": "/faq",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "brokenImages": [],
+      "h1Count": 1,
+      "route": "/about",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "brokenImages": [],
+      "h1Count": 1,
+      "route": "/contact",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "brokenImages": [],
+      "h1Count": 1,
+      "route": "/request-demo",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "brokenImages": [],
+      "h1Count": 1,
+      "route": "/request-pilot",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "brokenImages": [],
+      "h1Count": 1,
+      "route": "/waitlist",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "brokenImages": [],
+      "h1Count": 1,
+      "route": "/sign-in",
+      "scrollWidth": 390,
+      "width": 390,
+      "corrected": "Illustration now scales to its mobile column; rechecked at 390, 360, and 768 px."
+    },
+    {
+      "brokenImages": [],
+      "h1Count": 1,
+      "route": "/privacy",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "brokenImages": [],
+      "h1Count": 1,
+      "route": "/terms",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "brokenImages": [],
+      "h1Count": 1,
+      "route": "/accessibility",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "brokenImages": [],
+      "h1Count": 1,
+      "route": "/demo",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "brokenImages": [],
+      "h1Count": 1,
+      "route": "/demo/skus",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "brokenImages": [],
+      "h1Count": 1,
+      "route": "/demo/skus/hx-42",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "brokenImages": [],
+      "h1Count": 1,
+      "route": "/demo/packets/dkt-hx42-v1",
+      "scrollWidth": 390,
+      "width": 390
+    }
+  ],
+  "additional_widths": [
+    {
+      "route": "/",
+      "scrollWidth": 768,
+      "width": 768
+    },
+    {
+      "route": "/products",
+      "scrollWidth": 768,
+      "width": 768
+    },
+    {
+      "route": "/pricing",
+      "scrollWidth": 768,
+      "width": 768
+    },
+    {
+      "route": "/demo/skus/hx-42",
+      "scrollWidth": 768,
+      "width": 768
+    },
+    {
+      "route": "/request-pilot",
+      "scrollWidth": 768,
+      "width": 768
+    },
+    {
+      "route": "/sign-in",
+      "scrollWidth": 768,
+      "width": 768
+    },
+    {
+      "route": "/",
+      "scrollWidth": 360,
+      "width": 360
+    },
+    {
+      "route": "/pricing",
+      "scrollWidth": 360,
+      "width": 360
+    },
+    {
+      "route": "/demo/skus",
+      "scrollWidth": 360,
+      "width": 360
+    },
+    {
+      "route": "/demo/skus/hx-42",
+      "scrollWidth": 360,
+      "width": 360
+    },
+    {
+      "route": "/request-pilot",
+      "scrollWidth": 360,
+      "width": 360
+    },
+    {
+      "route": "/sign-in",
+      "scrollWidth": 360,
+      "width": 360
+    }
+  ],
+  "functional_checks": [
+    "Readiness blocked before origin/screening/broker review",
+    "Proposed assumption edit and undo logged",
+    "Origin response requires explicit human review",
+    "False-positive disposition requires identifiers and reason",
+    "Conditional cost recalculates from 1000 to 2000 units and restores",
+    "Direct packet URL cannot bypass review gates",
+    "Broker rejection, working hypothesis, and open question required",
+    "Explicit discussion-completeness approval required",
+    "Actual PDF download matched source SHA-256",
+    "Reopening invalidates export readiness",
+    "Escape closes evidence sheet and restores source-control focus",
+    "Arrow navigation changes and focuses the selected tab",
+    "Mobile navigation groups expose all five offers and Escape returns focus",
+    "Required fields and consent reject an incomplete inquiry",
+    "Valid inquiry creates an explicitly unsent, unstored preview",
+    "Privacy diagnostics opt-in and opt-out work without remote transmission",
+    "Flip control updates pressed state",
+    "FAQ expanded state updates",
+    "Queue search, filters, empty state, reset, and rejected proposal verified",
+    "Hero chapter selection pauses at the selected real MP4 frame"
+  ],
+  "source_checks": [
+    "31 routes and 1621 links/assets/anchors checked; no issues",
+    "JavaScript syntax passed",
+    "Python source compilation passed"
+  ],
+  "reduced_motion": "CSS and JS branches reviewed; device preference was not changed during QA.",
+  "backend_limits": [
+    "Forms preview and download only; no lead service connected",
+    "No production account authentication",
+    "No customs filing, real screening, messages, payments, or system writes",
+    "LinkedIn/Crunchbase company URLs not supplied; marks inactive"
+  ],
+  "screenshots": {
+    "desktop": "1440×900",
+    "mobile": "390×844"
+  },
+  "console_errors": []
+}

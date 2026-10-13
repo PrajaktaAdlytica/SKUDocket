@@ -1,0 +1,157 @@
+[
+  {
+    "route": "/",
+    "title": "Prepare repeat-SKU import dossiers for broker review",
+    "kind": "marketing"
+  },
+  {
+    "route": "/products",
+    "title": "Five proposed offers",
+    "kind": "marketing"
+  },
+  {
+    "route": "/products/classification-dossiers",
+    "title": "Classification dossiers",
+    "kind": "marketing"
+  },
+  {
+    "route": "/products/origin-evidence",
+    "title": "Origin & preference evidence",
+    "kind": "marketing"
+  },
+  {
+    "route": "/products/screening-review",
+    "title": "Screening review",
+    "kind": "marketing"
+  },
+  {
+    "route": "/products/landed-cost",
+    "title": "Landed-cost scenarios",
+    "kind": "marketing"
+  },
+  {
+    "route": "/products/broker-packets",
+    "title": "Broker handoff packets",
+    "kind": "marketing"
+  },
+  {
+    "route": "/workspace",
+    "title": "The evidence workspace",
+    "kind": "marketing"
+  },
+  {
+    "route": "/how-it-works",
+    "title": "The reviewed workflow",
+    "kind": "marketing"
+  },
+  {
+    "route": "/for-importers",
+    "title": "For US importers",
+    "kind": "marketing"
+  },
+  {
+    "route": "/for-brokers",
+    "title": "For customs brokers",
+    "kind": "marketing"
+  },
+  {
+    "route": "/pilot",
+    "title": "Ten-SKU validation pilot",
+    "kind": "marketing"
+  },
+  {
+    "route": "/pricing",
+    "title": "Hypothetical pilot pricing",
+    "kind": "marketing"
+  },
+  {
+    "route": "/controls",
+    "title": "Controls and limits",
+    "kind": "marketing"
+  },
+  {
+    "route": "/resources",
+    "title": "Resources",
+    "kind": "marketing"
+  },
+  {
+    "route": "/resources/sample-dossier",
+    "title": "Synthetic sample dossier",
+    "kind": "marketing"
+  },
+  {
+    "route": "/resources/method-and-sources",
+    "title": "Method and sources",
+    "kind": "marketing"
+  },
+  {
+    "route": "/faq",
+    "title": "Frequently asked questions",
+    "kind": "marketing"
+  },
+  {
+    "route": "/about",
+    "title": "About SKUDocket",
+    "kind": "marketing"
+  },
+  {
+    "route": "/contact",
+    "title": "Contact and inquiries",
+    "kind": "marketing"
+  },
+  {
+    "route": "/request-demo",
+    "title": "Request a walkthrough",
+    "kind": "form"
+  },
+  {
+    "route": "/request-pilot",
+    "title": "Discuss a pilot",
+    "kind": "form"
+  },
+  {
+    "route": "/waitlist",
+    "title": "Research updates",
+    "kind": "form"
+  },
+  {
+    "route": "/sign-in",
+    "title": "Preview access",
+    "kind": "marketing"
+  },
+  {
+    "route": "/privacy",
+    "title": "Privacy in this preview",
+    "kind": "marketing"
+  },
+  {
+    "route": "/terms",
+    "title": "Preview terms and scope",
+    "kind": "marketing"
+  },
+  {
+    "route": "/accessibility",
+    "title": "Accessibility",
+    "kind": "marketing"
+  },
+  {
+    "route": "/demo",
+    "title": "Interactive synthetic demo",
+    "kind": "marketing"
+  },
+  {
+    "route": "/demo/skus",
+    "title": "Synthetic review queue",
+    "kind": "queue"
+  },
+  {
+    "route": "/demo/skus/hx-42",
+    "title": "HX-42 synthetic dossier",
+    "kind": "record"
+  },
+  {
+    "route": "/demo/packets/dkt-hx42-v1",
+    "title": "Synthetic broker packet",
+    "kind": "packet"
+  }
+]
