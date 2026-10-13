@@ -109,6 +109,40 @@ body[data-route="/for-brokers"] #main>section:nth-child(4){background-color:#F0E
 body[data-route="/for-brokers"] :is(.page-hero,#main>section:nth-child(2),#main>section:nth-child(3),#main>section:nth-child(4)) .eyebrow{color:#803531}
 body[data-route="/for-brokers"] .page-hero .button.secondary{border-color:#263C4C55}
 
+
+/* Resource family: colored covers, textured reading surfaces, and folio hovers. */
+:is(body[data-route^="/resources"],body[data-route="/faq"]){--resource-hero:#D6E1D5;--resource-reading:#EED8D2}
+body[data-route="/resources/sample-dossier"]{--resource-hero:#F0E4BA;--resource-reading:#D6E1D5}
+body[data-route="/resources/method-and-sources"]{--resource-hero:#DCE7EB;--resource-reading:#F0E4BA}
+body[data-route="/faq"]{--resource-hero:#EED8D2;--resource-reading:#F2EDE0}
+:is(body[data-route^="/resources"],body[data-route="/faq"]) .page-hero{background-color:var(--resource-hero);--sk-muted:#48585F}
+:is(body[data-route^="/resources"],body[data-route="/faq"]) #main>.section{background-color:var(--resource-reading);background-image:url('/assets/textures/docket-paper.svg');background-size:180px 180px;--sk-muted:#48585F}
+:is(body[data-route^="/resources"],body[data-route="/faq"]) #main>.section:nth-child(odd){background-color:#F2EDE0;background-image:url('/assets/textures/docket-paper.svg'),repeating-linear-gradient(0deg,transparent 0,transparent 31px,#263C4C08 31px,#263C4C08 32px);background-size:180px 180px,auto}
+:is(body[data-route^="/resources"],body[data-route="/faq"]) #main :is(.eyebrow,.source-register .index){color:#803531}
+:is(body[data-route^="/resources"],body[data-route="/faq"]) .resource-card{position:relative;isolation:isolate;overflow:hidden;display:flex;flex-direction:column;background:#FFFDF8;border-color:#263C4C30;--folio-tint:#F0E4BA;--folio-edge:#B89A49;transition:transform 280ms var(--sk-ease),box-shadow 280ms,border-color 280ms}
+body[data-route="/resources"] .resource-card:nth-child(2){--folio-tint:#DCE7EB;--folio-edge:#667F99}
+body[data-route="/resources"] .resource-card:nth-child(3){--folio-tint:#D6E1D5;--folio-edge:#6B8475}
+body[data-route="/resources"] .resource-card.revealed{animation:none}
+body[data-route="/resources"] .resource-card>img{height:auto;width:100%;margin:0 0 24px;transition:transform 300ms var(--sk-ease)}
+body[data-route="/resources"] .resource-card .text-link{margin-top:auto;gap:10px;min-height:44px}
+body[data-route="/resources"] .resource-card .text-link .icon{width:17px;height:17px;max-width:17px;margin:0;flex-shrink:0;transition:transform 280ms}
+body[data-route="/resources"] .resource-card:before{content:'';position:absolute;inset:0;background:var(--folio-tint);transform:scaleY(0);transform-origin:bottom;transition:transform 360ms var(--sk-ease);opacity:.55;z-index:-1;pointer-events:none}
+body[data-route="/resources"] .resource-card:after{content:'';position:absolute;right:0;bottom:0;width:35px;height:35px;clip-path:polygon(100% 0,100% 100%,0 100%);background:var(--folio-edge);opacity:.35;transform:translate(100%,100%);transition:transform 300ms;pointer-events:none}
+body[data-route="/resources"] .resource-card:focus-visible{border-color:var(--folio-edge);box-shadow:0 14px 28px #263C4C16}
+body[data-route="/resources"] .resource-card:focus-visible:before{transform:scaleY(1)}
+body[data-route="/resources"] .resource-card:focus-visible:after{transform:translate(0,0)}
+body[data-route="/resources/method-and-sources"] .editorial-card{background:#FFFDF8;border-color:#263C4C30;transition:transform 280ms,box-shadow 280ms,border-color 280ms}
+body[data-route="/resources/method-and-sources"] .editorial-card.revealed{animation:none}
+body[data-route="/resources/method-and-sources"] .source-register article{padding:28px 24px;border:1px solid #263C4C30;background:#FFFDF8;border-radius:5px;margin-bottom:14px;transition:background-color 220ms,border-color 220ms,box-shadow 220ms}
+body[data-route="/resources/method-and-sources"] .source-register{border:0}
+body[data-route="/resources/sample-dossier"] .packet-toc>div{background:#FFFDF8;transition:transform 280ms,box-shadow 280ms,border-color 280ms}
+body[data-route="/faq"] .accordion details{background:#FFFDF8;border:1px solid #263C4C30;border-radius:5px;margin-bottom:12px;transition:background-color 220ms,box-shadow 220ms}
+body[data-route="/faq"] .accordion summary{padding:21px 23px}
+body[data-route="/faq"] .accordion details p{padding:0 23px 23px;margin:0}
+body[data-route="/faq"] .accordion details[open],body[data-route="/faq"] .accordion details:focus-within{background:#F5EDCE;box-shadow:0 5px 15px #263C4C09}
+@media(hover:hover) and (pointer:fine){body[data-route="/resources"] .resource-card:hover{transform:translateY(-5px);box-shadow:0 16px 30px #263C4C18;border-color:var(--folio-edge)}body[data-route="/resources"] .resource-card:hover:before{transform:scaleY(1)}body[data-route="/resources"] .resource-card:hover:after{transform:translate(0,0)}body[data-route="/resources"] .resource-card:hover>img{transform:translateY(-3px)}body[data-route="/resources"] .resource-card:hover .text-link .icon{transform:translateX(3px)}body[data-route="/resources/method-and-sources"] .editorial-card:hover,body[data-route="/resources/sample-dossier"] .packet-toc>div:hover{transform:translateY(-4px);border-color:#667F99;box-shadow:0 12px 24px #263C4C12}body[data-route="/resources/method-and-sources"] .source-register article:hover,body[data-route="/resources/method-and-sources"] .source-register article:focus-within{background:#F5EDCE;border-color:#B89A49;box-shadow:0 5px 15px #263C4C0C}body[data-route="/faq"] .accordion details:hover{background:#F5EDCE;box-shadow:0 5px 15px #263C4C09}}
+@media(prefers-reduced-motion:reduce){:is(body[data-route^="/resources"],body[data-route="/faq"]) :is(.resource-card,.resource-card:before,.resource-card:after,.resource-card>img,.text-link .icon,.editorial-card,.packet-toc>div,.source-register article,.accordion details){transition:none}:is(body[data-route^="/resources"],body[data-route="/faq"]) :is(.resource-card:hover,.resource-card:hover>img,.resource-card:hover .text-link .icon,.editorial-card:hover,.packet-toc>div:hover){transform:none}}
+
 @media print{.site-header,.site-status,.site-footer,.demo-topbar,.workbench-sidebar,.panel-actions,dialog,.toast{display:none}.container{width:100%;max-width:none}.section,.demo-shell{padding:20px 0}.workbench-layout{display:block}.record-state-grid{grid-template-columns:repeat(5,1fr)}.review-pair{grid-template-columns:1fr 1fr}}
 
 .hero-ledger .hero-asset-note{color:#D5D2CA}.hero-ledger .hero-figure>.badge{background:var(--sk-cream)}

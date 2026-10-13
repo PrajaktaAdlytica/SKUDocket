@@ -1,0 +1,26 @@
+{
+  "routes": [
+    "/resources",
+    "/resources/sample-dossier",
+    "/resources/method-and-sources",
+    "/faq"
+  ],
+  "changes": [
+    "Distinct colored heroes",
+    "Paper-grain and ruled reading sections",
+    "Shutter, lift and folded-corner library card states",
+    "Compact diagrams with natural aspect ratio",
+    "Hover states on source-category cards, source rows, PDF contents and FAQ panels"
+  ],
+  "checks": {
+    "mobile_all_four_routes": true,
+    "tablet_all_four_routes": true,
+    "desktop_library_checked": true,
+    "no_horizontal_overflow": true,
+    "keyboard_focus_shutter_verified": true,
+    "sample_card_navigation_verified": true,
+    "faq_open_close_control_verified": true,
+    "console_errors": []
+  },
+  "reduced_motion": "No transitions or hover lift in CSS; OS preference not changed."
+}
