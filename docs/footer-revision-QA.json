@@ -1,0 +1,23 @@
+{
+  "scope": "Shared footer on all 31 routes",
+  "references": [
+    "https://linear.app/",
+    "https://ramp.com/"
+  ],
+  "design": "Deep harbor, cream logo/type, butter CTA, paper grain, original folded-docket motif",
+  "checks": {
+    "routes": 31,
+    "all_routes_share_footer": true,
+    "browser_widths": [
+      390,
+      775,
+      1440
+    ],
+    "horizontal_overflow": false,
+    "product_and_demo_pages_checked": true,
+    "privacy_dialog_operates": true,
+    "social_icons_legible": true,
+    "social_profiles_disabled_until_supplied": true
+  },
+  "content": "All existing navigation, legal links, and concept disclosure retained."
+}
