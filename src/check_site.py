@@ -32,7 +32,7 @@ for r in routes:
  if p.missing_alt:issues.append([route,'missing alt',p.missing_alt])
  if not all([p.title,p.description,p.favicon]):issues.append([route,'missing metadata or favicon'])
  for a in p.assets:
-  if not (dist/a.lstrip('/')).is_file():issues.append([route,'missing asset',a])
+  if not (dist/urlparse(a).path.lstrip('/')).is_file():issues.append([route,'missing asset',a])
  for link in p.links:
   if link=='#' or not link:issues.append([route,'empty destination',link])
   u=urlparse(link)

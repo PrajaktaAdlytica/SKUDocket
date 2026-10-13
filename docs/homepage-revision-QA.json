@@ -1,0 +1,41 @@
+{
+  "scope": "Six homepage browser comments",
+  "changes": [
+    "Hero film transform removed at desktop and mobile breakpoints",
+    "Sage paper texture in importer qualifier",
+    "Four evidence artifacts replay in scroll order on viewport re-entry",
+    "Soft coral woven offer background",
+    "Warm butter workflow background",
+    "Ruled paper pilot texture"
+  ],
+  "checks": {
+    "viewport_widths": [
+      390,
+      775,
+      1440
+    ],
+    "page_horizontal_overflow": false,
+    "downward_delays_seconds": [
+      0,
+      0.16,
+      0.32,
+      0.48
+    ],
+    "upward_delays_seconds": [
+      0.48,
+      0.32,
+      0.16,
+      0
+    ],
+    "reset_on_viewport_exit": true,
+    "hero_computed_transform": "none",
+    "console_errors": [],
+    "source_route_and_link_check": "31 routes; 1621 links/assets/anchors; passed",
+    "reduced_motion": "Fallback is present; OS preference not changed during QA"
+  },
+  "notes": [
+    "Workflow card SVGs retain their natural ratio.",
+    "Text on colored surfaces uses a darker secondary text role.",
+    "Asset URLs include content hashes to refresh revised CSS/JS."
+  ]
+}

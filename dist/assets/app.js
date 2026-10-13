@@ -43,6 +43,36 @@ $('#download-analytics')?.addEventListener('click',()=>{download(JSON.stringify(
 const motion=matchMedia('(prefers-reduced-motion: reduce)');
 if('IntersectionObserver'in window&&!motion.matches){const obs=new IntersectionObserver(entries=>{entries.forEach(en=>{if(en.isIntersecting){en.target.classList.remove('offscreen');en.target.classList.add('revealed');obs.unobserve(en.target)}})},{threshold:.08});$$('[data-reveal]').forEach((el,i)=>{const rect=el.getBoundingClientRect();if(rect.top>innerHeight){el.classList.add('offscreen');obs.observe(el)}})}
 motion.addEventListener('change',()=>{if(motion.matches)$$('.offscreen').forEach(el=>el.classList.remove('offscreen'));});
+// Replay the four evidence artifacts on each viewport entry, in scroll order.
+const artifactGroups=$$('.artifact-line');
+if(artifactGroups.length&&'IntersectionObserver'in window){
+ let artifactObserver,previousScroll=scrollY,scrollDirection='down';
+ const noteDirection=()=>{const next=scrollY;if(Math.abs(next-previousScroll)>2)scrollDirection=next>previousScroll?'down':'up';previousScroll=next;};
+ window.addEventListener('scroll',noteDirection,{passive:true});
+ const configureArtifacts=()=>{
+  artifactObserver?.disconnect();
+  artifactGroups.forEach(group=>{group.classList.remove('sequence-ready','sequence-in-view');});
+  if(motion.matches)return;
+  artifactGroups.forEach(group=>group.classList.add('sequence-ready'));
+  artifactObserver=new IntersectionObserver(entries=>{
+   entries.forEach(entry=>{
+    const group=entry.target;
+    if(entry.isIntersecting&&entry.intersectionRatio>=.18){
+     if(!group.classList.contains('sequence-in-view')){
+      const cards=$$('.artifact',group),up=scrollDirection==='up';
+      group.dataset.revealDirection=scrollDirection;
+      group.style.setProperty('--artifact-offset',up?'-18px':'18px');
+      cards.forEach((card,i)=>card.style.setProperty('--artifact-order',String(up?cards.length-1-i:i)));
+      group.classList.add('sequence-in-view');
+     }
+    }else if(!entry.isIntersecting){group.classList.remove('sequence-in-view');}
+   });
+  },{threshold:[0,.18],rootMargin:'-80px 0px -10% 0px'});
+  artifactGroups.forEach(group=>artifactObserver.observe(group));
+ };
+ configureArtifacts();
+ motion.addEventListener('change',configureArtifacts);
+}
 const video=$('#hero-video'),filmToggle=$('#film-toggle');let userPaused=false;
 if(video){
  const setFilmButton=()=>{filmToggle.innerHTML=ico(video.paused?'play':'pause')+`<span>${video.paused?'Play the story':'Pause the story'}</span>`;filmToggle.setAttribute('aria-label',video.paused?'Play product animation':'Pause product animation');};

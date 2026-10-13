@@ -65,9 +65,9 @@ Measurement:
   pilot_request, consent_submit. No raw records or form text enters events.
 
 Publication:
-  The tracked .openai/hosting.json retains the exact private Sites identity.
+  The tracked .openai/hosting.json retains the exact Sites identity.
   Source must be synchronized before publishing a new version. Keep the
-  current private audience unless the owner asks to change it.
+  current public audience unless the owner asks to change it.
   No company domain or verified LinkedIn/Crunchbase profile was supplied.
   Footer marks are present but inactive; no profile URLs have been fabricated.
 
@@ -81,3 +81,7 @@ Validation gate:
 Brand assets and source references retain their licenses. See assets/licenses.
 Final professional compliance/legal review, production integrations, operator
 facts and backend infrastructure remain outside this synthetic website build.
+
+Homepage revision: straight hero frame; sage paper qualifier; coral woven
+  offer section; butter workflow; ruled pilot paper. Evidence artifacts
+  replay a staggered entrance on viewport entry in either scroll direction.
