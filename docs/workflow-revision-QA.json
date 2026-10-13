@@ -1,0 +1,24 @@
+{
+  "scope": "Six annotations on /how-it-works",
+  "changes": [
+    "Sage hero",
+    "Coral collection",
+    "Butter handoff",
+    "Three independent color-shutter, border, shadow and 6px-lift hover states",
+    "Natural diagram height and tighter card spacing",
+    "Keyboard focus highlight and functional step anchors"
+  ],
+  "checks": {
+    "widths": [
+      390,
+      775,
+      1440
+    ],
+    "overflow": false,
+    "all_three_hover_states_checked": true,
+    "keyboard_focus_checked": true,
+    "handoff_anchor_checked": true,
+    "console_errors": []
+  },
+  "reduced_motion": "CSS removes transition and lift; preference not changed during browser QA."
+}
