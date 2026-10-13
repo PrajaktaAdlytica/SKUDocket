@@ -66,6 +66,24 @@ body[data-route="/how-it-works"] .workflow-strip article:focus-within{box-shadow
 @media(max-width:900px) and (min-width:601px){body[data-route="/how-it-works"] .workflow-strip{gap:12px}body[data-route="/how-it-works"] .workflow-strip article{padding:22px 16px}body[data-route="/how-it-works"] .workflow-strip h3{font-size:23px}}
 @media(prefers-reduced-motion:reduce){body[data-route="/how-it-works"] .workflow-strip article,body[data-route="/how-it-works"] .workflow-strip article:before,body[data-route="/how-it-works"] .workflow-strip article:after,body[data-route="/how-it-works"] .workflow-strip article>img,.workflow-step-link .icon{transition:none}body[data-route="/how-it-works"] .workflow-strip article:hover,body[data-route="/how-it-works"] .workflow-strip article:hover>img,body[data-route="/how-it-works"] .workflow-strip article:hover .icon{transform:none}}
 
+
+/* Workspace: illustrated evidence desk and distinct review chapters. */
+body[data-route="/workspace"] .page-hero{background-color:#FAF7EF;background-image:radial-gradient(ellipse at 50% 23%,#FAF7EFF5 0%,#FAF7EFD9 42%,#FAF7EF66 90%),url('/assets/illustrations/review-desk.webp');background-size:cover;background-position:center,center top;--sk-muted:#48585F}
+body[data-route="/workspace"] #main>section:nth-child(2){background:#D6E1D5;--sk-muted:#48585F}
+body[data-route="/workspace"] #main>section:nth-child(3){background:#EED8D2;--sk-muted:#48585F}
+body[data-route="/workspace"] #main>section:nth-child(4){background-color:#F2EDE0;background-image:url('/assets/textures/docket-paper.svg'),repeating-linear-gradient(0deg,transparent 0,transparent 31px,#263C4C0A 31px,#263C4C0A 32px);background-size:180px 180px,auto;--sk-muted:#48585F}
+body[data-route="/workspace"] :is(.page-hero,#main>section:nth-child(2),#main>section:nth-child(3),#main>section:nth-child(4)) .eyebrow{color:#803531}
+body[data-route="/workspace"] #main>section:nth-child(2) .button.secondary{border-color:#263C4C55}
+body[data-route="/workspace"] .editorial-card{isolation:isolate;overflow:hidden;background:#FFFDF8;border-color:#263C4C30;transition:transform 280ms var(--sk-ease),box-shadow 280ms,border-color 280ms;--card-tint:#F0E4BA;--card-edge:#B89A49}
+body[data-route="/workspace"] .editorial-card:nth-child(2){--card-tint:#DCE7EB;--card-edge:#667F99}
+body[data-route="/workspace"] .editorial-card:nth-child(3){--card-tint:#D6E1D5;--card-edge:#6B8475}
+body[data-route="/workspace"] .editorial-card.revealed{animation:none}
+body[data-route="/workspace"] .editorial-card:before{content:'';position:absolute;inset:0;background:var(--card-tint);opacity:0;transition:opacity 280ms;z-index:-1;pointer-events:none}
+body[data-route="/workspace"] .editorial-card:after{content:'';position:absolute;right:0;bottom:0;width:38px;height:38px;clip-path:polygon(100% 0,100% 100%,0 100%);background:var(--card-edge);opacity:.3;transform:translate(100%,100%);transition:transform 300ms var(--sk-ease);pointer-events:none}
+body[data-route="/workspace"] .editorial-card .icon{transition:transform 300ms var(--sk-ease)}
+@media(hover:hover) and (pointer:fine){body[data-route="/workspace"] .editorial-card:hover{transform:translateY(-5px);box-shadow:0 14px 28px #263C4C16;border-color:var(--card-edge)}body[data-route="/workspace"] .editorial-card:hover:before{opacity:.55}body[data-route="/workspace"] .editorial-card:hover:after{transform:translate(0,0)}body[data-route="/workspace"] .editorial-card:hover .icon{transform:translateY(-3px) rotate(-4deg)}}
+@media(prefers-reduced-motion:reduce){body[data-route="/workspace"] .editorial-card,body[data-route="/workspace"] .editorial-card:before,body[data-route="/workspace"] .editorial-card:after,body[data-route="/workspace"] .editorial-card .icon{transition:none}body[data-route="/workspace"] .editorial-card:hover,body[data-route="/workspace"] .editorial-card:hover .icon{transform:none}}
+
 @media print{.site-header,.site-status,.site-footer,.demo-topbar,.workbench-sidebar,.panel-actions,dialog,.toast{display:none}.container{width:100%;max-width:none}.section,.demo-shell{padding:20px 0}.workbench-layout{display:block}.record-state-grid{grid-template-columns:repeat(5,1fr)}.review-pair{grid-template-columns:1fr 1fr}}
 
 .hero-ledger .hero-asset-note{color:#D5D2CA}.hero-ledger .hero-figure>.badge{background:var(--sk-cream)}

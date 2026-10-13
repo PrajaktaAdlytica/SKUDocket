@@ -1,0 +1,22 @@
+{
+  "scope": "Five workspace page annotations",
+  "changes": [
+    "Review-desk watercolor image behind cream hero overlay",
+    "Sage record section",
+    "Coral revisions section",
+    "Paper grain and faint ruling in permissions section",
+    "Three independent hover tints, 5px lift, shadow and folded-corner details"
+  ],
+  "checks": {
+    "widths": [
+      390,
+      775,
+      1440
+    ],
+    "horizontal_overflow": false,
+    "all_three_hover_states_checked": true,
+    "mobile_hero_legibility_visually_checked": true,
+    "console_errors": []
+  },
+  "reduced_motion": "Transitions and lift disabled in CSS; OS preference not changed."
+}
