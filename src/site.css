@@ -92,6 +92,14 @@ body[data-route="/controls"] #main>section:nth-child(2) table thead{background:#
 body[data-route="/controls"] #main>section:nth-child(4){background:#F0E4BA;--sk-muted:#48585F}
 body[data-route="/controls"] #main>section:nth-child(4) .eyebrow{color:#803531}
 
+
+/* Importer lane: watercolor harbor behind the evidence story. */
+body[data-route="/for-importers"] .page-hero{background-color:#FAF7EF;background-image:linear-gradient(90deg,#FAF7EFF5 0%,#FAF7EFDB 42%,#FAF7EF66 100%),url('/assets/illustrations/harbor-atlas.webp');background-size:cover;background-position:center,center bottom;--sk-muted:#48585F}
+body[data-route="/for-importers"] #main>section:nth-child(2){background:#EED8D2;--sk-muted:#48585F}
+body[data-route="/for-importers"] #main>section:nth-child(4){background:#D6E1D5;--sk-muted:#48585F}
+body[data-route="/for-importers"] :is(.page-hero,#main>section:nth-child(2),#main>section:nth-child(4)) .eyebrow{color:#803531}
+@media(max-width:600px){body[data-route="/for-importers"] .page-hero{background-image:linear-gradient(180deg,#FAF7EFF5 0%,#FAF7EFE6 47%,#FAF7EF88 100%),url('/assets/illustrations/harbor-atlas.webp');background-position:center,65% bottom}}
+
 @media print{.site-header,.site-status,.site-footer,.demo-topbar,.workbench-sidebar,.panel-actions,dialog,.toast{display:none}.container{width:100%;max-width:none}.section,.demo-shell{padding:20px 0}.workbench-layout{display:block}.record-state-grid{grid-template-columns:repeat(5,1fr)}.review-pair{grid-template-columns:1fr 1fr}}
 
 .hero-ledger .hero-asset-note{color:#D5D2CA}.hero-ledger .hero-figure>.badge{background:var(--sk-cream)}
