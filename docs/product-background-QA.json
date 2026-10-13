@@ -1,0 +1,20 @@
+{
+  "scope": "Product overview plus all five product detail pages",
+  "changes": [
+    "Distinct colored, paper-grain heroes with original evidence-atlas SVG",
+    "Coral offer/input sections; sage inputs on landed-cost page",
+    "Butter review/comparison sections with softened woven texture"
+  ],
+  "verification": {
+    "browser_widths": [
+      390,
+      775,
+      1440
+    ],
+    "all_six_routes_checked": true,
+    "no_horizontal_overflow": true,
+    "offer_flip_control_operates": true,
+    "console_warnings_or_errors": []
+  },
+  "content": "Product content, unique diagrams, demo labels and controls retained."
+}
