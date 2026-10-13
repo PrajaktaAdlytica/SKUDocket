@@ -210,3 +210,13 @@ if(document.body.dataset.route==='/')track('landing_view',{preview_only:true});
 if(document.body.dataset.route==='/pricing')track('price_view',{preview_only:true});
 if(document.body.dataset.route?.startsWith('/demo'))track('demo_open',{preview_only:true});
 $$('a[href*="request-pilot?offer="]').forEach(a=>a.addEventListener('click',()=>{const selected=Number(new URL(a.href).searchParams.get('offer'));track('offer_13_selected',{selected_offer_id:selected,preview_only:true});}));
+
+// Fictional demo sign-in only. No network request, credential storage, or analytics.
+const demoSignin=$('#demo-signin');
+if(demoSignin){
+ const email=$('#signin-email'),password=$('#signin-password'),message=$('#signin-status'),toggle=$('#signin-password-toggle');
+ $('fieldset',demoSignin).disabled=false;
+ $('#signin-fill').addEventListener('click',()=>{email.value='demo@skudocket.example';password.value='DocketDemo42!';message.textContent='Fictional demo credentials filled. Ready to explore.';email.removeAttribute('aria-invalid');password.removeAttribute('aria-invalid');});
+ toggle.addEventListener('click',()=>{const show=password.type==='password';password.type=show?'text':'password';toggle.textContent=show?'Hide':'Show';toggle.setAttribute('aria-label',show?'Hide demo password':'Show demo password');toggle.setAttribute('aria-pressed',String(show));});
+ demoSignin.addEventListener('submit',event=>{event.preventDefault();if(email.value.trim().toLowerCase()==='demo@skudocket.example'&&password.value==='DocketDemo42!'){email.value='';password.value='';location.assign('/demo/skus');}else{message.textContent='Use the fictional demo credentials shown below. Live accounts are not connected.';email.setAttribute('aria-invalid','true');password.setAttribute('aria-invalid','true');email.focus();}});
+}

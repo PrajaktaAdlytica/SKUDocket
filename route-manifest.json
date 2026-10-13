@@ -115,8 +115,13 @@
     "kind": "form"
   },
   {
-    "route": "/sign-in",
+    "route": "/preview-access",
     "title": "Preview access",
+    "kind": "marketing"
+  },
+  {
+    "route": "/sign-in",
+    "title": "Sign in",
     "kind": "marketing"
   },
   {

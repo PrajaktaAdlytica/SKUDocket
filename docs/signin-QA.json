@@ -1,0 +1,16 @@
+{
+  "scope": "New /sign-in form and preserved /preview-access page",
+  "checks": {
+    "source_routes": 32,
+    "link_asset_checks": 1769,
+    "empty_submit_error_verified": true,
+    "demo_fill_verified": true,
+    "password_show_hide_verified": true,
+    "valid_demo_redirect_verified": "/demo/skus/",
+    "mobile_width": 390,
+    "tablet_width": 775,
+    "no_horizontal_overflow": true
+  },
+  "boundary": "Only fictional credentials accepted. No network login, storage, or analytics. Form disabled without JavaScript. Live authentication is not connected.",
+  "verification_limit": "Browser transport became unavailable during a repeat mobile submit check."
+}
