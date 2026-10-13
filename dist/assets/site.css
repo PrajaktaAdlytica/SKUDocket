@@ -157,6 +157,14 @@ body[data-route="/preview-access"] .access-panel{background:#FFFDF8;border-color
 @media(max-width:1000px){.signin-layout{gap:40px;grid-template-columns:1fr 1fr}.signin-story h1{font-size:45px}.signin-card{padding:28px}.signin-card h2{font-size:30px}}
 @media(max-width:600px){.signin-page{padding:40px 0 50px}.signin-layout{display:flex;flex-direction:column;gap:32px;align-items:stretch}.signin-story h1{font-size:41px}.signin-story .lead{font-size:15px}.signin-illustration{display:none}.signin-story .text-link{font-size:12px}.signin-card{padding:26px;max-width:none}.signin-mark{margin-bottom:20px}.signin-card h2{font-size:31px}}
 
+
+/* Native-scroll entrances: opacity/individual translate never override hover transforms. */
+#main{overflow-x:clip}
+.scroll-enter:not(.scroll-visible){opacity:0}
+.scroll-enter.scroll-visible{opacity:1}
+@media(prefers-reduced-motion:reduce){.scroll-enter:not(.scroll-visible){opacity:1}}
+@media print{.scroll-enter:not(.scroll-visible){opacity:1}}
+
 @media print{.site-header,.site-status,.site-footer,.demo-topbar,.workbench-sidebar,.panel-actions,dialog,.toast{display:none}.container{width:100%;max-width:none}.section,.demo-shell{padding:20px 0}.workbench-layout{display:block}.record-state-grid{grid-template-columns:repeat(5,1fr)}.review-pair{grid-template-columns:1fr 1fr}}
 
 .hero-ledger .hero-asset-note{color:#D5D2CA}.hero-ledger .hero-figure>.badge{background:var(--sk-cream)}

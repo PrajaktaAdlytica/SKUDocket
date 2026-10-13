@@ -41,8 +41,43 @@ $('#analytics-opt-in')?.addEventListener('change',ev=>{writeStorage('skudocket-d
 $('#clear-analytics')?.addEventListener('click',()=>{sessionStorage.removeItem('skudocket-events');$('#analytics-status').textContent='Local event log cleared.';});
 $('#download-analytics')?.addEventListener('click',()=>{download(JSON.stringify(readStorage('skudocket-events',[]),null,2),'SKUDocket-local-preview-events.json','application/json');$('#analytics-status').textContent='Local log download prepared. Synthetic interactions are not demand evidence.';});
 const motion=matchMedia('(prefers-reduced-motion: reduce)');
-if('IntersectionObserver'in window&&!motion.matches){const obs=new IntersectionObserver(entries=>{entries.forEach(en=>{if(en.isIntersecting){en.target.classList.remove('offscreen');en.target.classList.add('revealed');obs.unobserve(en.target)}})},{threshold:.08});$$('[data-reveal]').forEach((el,i)=>{const rect=el.getBoundingClientRect();if(rect.top>innerHeight){el.classList.add('offscreen');obs.observe(el)}})}
-motion.addEventListener('change',()=>{if(motion.matches)$$('.offscreen').forEach(el=>el.classList.remove('offscreen'));});
+// Repeating, staggered left/right entrances with native scrolling.
+// Individual `translate` leaves hover transforms and flipped illustrations intact.
+if('IntersectionObserver' in window&&!['queue','record','packet'].includes(document.body.dataset.page)){
+ const root=$('#main'),selector='[data-reveal], .page-hero .hero-text, .page-hero .hero-figure, .section-heading>div, .table-scroll, .source-register>article, .packet-toc>div, .accordion>details, .date-table>div, .date-table>dl, .dossier-summary>div, .dossier-summary>dl, .demo-path>div, .demo-path>ol, .legal-layout article, .manifesto, .access-layout>div, .signin-story, .signin-card, .form-story, .inquiry-form, .control-pairs>article, .limit-grid>div, .demo-preview, .io-grid>article, .related-links>a, .cta-box>div';
+ const candidates=root?[...$$(selector,root),...$$('.footer-identity,.footer-invitation,.footer-col')].filter(el=>!el.closest('.artifact-line,#hero-film')&&(el.textContent.trim()||el.querySelector('img'))):[];
+ const targets=candidates.filter(el=>!candidates.some(parent=>parent!==el&&parent.contains(el)));
+ const groups=new Map(),info=new Map(),running=new Map();
+ targets.forEach(el=>{const group=el.parentElement;if(!groups.has(group))groups.set(group,[]);groups.get(group).push(el);});
+ groups.forEach(items=>items.forEach((el,index)=>info.set(el,{index,count:items.length})));
+ let observer,lastY=scrollY,direction='down';
+ window.addEventListener('scroll',()=>{const y=scrollY;if(Math.abs(y-lastY)>2)direction=y>lastY?'down':'up';lastY=y;},{passive:true});
+ const stop=el=>{running.get(el)?.cancel();running.delete(el);};
+ const show=(el,animate=true)=>{
+  if(el.classList.contains('scroll-visible'))return;
+  stop(el);const {index,count}=info.get(el),up=direction==='up';
+  const order=Math.min(up?count-1-index:index,5),side=(index%2===0?-1:1)*(up?-1:1);
+  el.dataset.scrollDirection=direction;el.dataset.scrollSide=side<0?'left':'right';
+  el.dataset.scrollOrder=String(order);el.classList.add('scroll-visible');
+  if(animate&&!motion.matches&&el.animate){
+   const distance=innerWidth<600?24:44;
+   const anim=el.animate([{opacity:0,translate:`${side*distance}px 0`},{opacity:1,translate:'0px 0px'}],{duration:580,delay:order*125,easing:'cubic-bezier(.22,1,.36,1)',fill:'both'});
+   running.set(el,anim);anim.onfinish=()=>{if(running.get(el)===anim){running.delete(el);anim.cancel();}};
+  }
+ };
+ const configure=()=>{
+  observer?.disconnect();targets.forEach(el=>{stop(el);el.classList.remove('scroll-enter','scroll-visible','offscreen','revealed');});
+  if(motion.matches)return;
+  observer=new IntersectionObserver(entries=>entries.forEach(entry=>{
+   const el=entry.target;
+   if(entry.isIntersecting)show(el);
+   else if(!el.contains(document.activeElement)){stop(el);el.classList.remove('scroll-visible');}
+  }),{rootMargin:'-70px 0px -5% 0px',threshold:0});
+  targets.forEach(el=>{el.classList.add('scroll-enter');const rect=el.getBoundingClientRect();if(rect.bottom>70&&rect.top<innerHeight)show(el,false);observer.observe(el);});
+ };
+ document.addEventListener('focusin',event=>{targets.filter(el=>el.contains(event.target)).forEach(el=>{stop(el);el.classList.add('scroll-visible');});});
+ configure();motion.addEventListener('change',configure);
+}
 // Replay the four evidence artifacts on each viewport entry, in scroll order.
 const artifactGroups=$$('.artifact-line');
 if(artifactGroups.length&&'IntersectionObserver'in window){

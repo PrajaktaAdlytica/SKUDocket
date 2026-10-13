@@ -1,0 +1,46 @@
+{
+  "scope": "Repeating scroll entrances across marketing, resource, form and access pages",
+  "implementation": "IntersectionObserver + Web Animations API using opacity and individual translate; native scrolling",
+  "checks": {
+    "down_card_order": [
+      0,
+      1,
+      2
+    ],
+    "down_sides": [
+      "left",
+      "right",
+      "left"
+    ],
+    "up_card_order": [
+      2,
+      1,
+      0
+    ],
+    "up_sides": [
+      "right",
+      "left",
+      "right"
+    ],
+    "replay_after_viewport_exit": true,
+    "footer_order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "hover_transform_and_entrance_translate_coexist": true,
+    "offer_flip_operates": true,
+    "page_types_browser_checked": 14,
+    "widths": [
+      390,
+      775,
+      1440
+    ],
+    "horizontal_overflow": false,
+    "settled_hidden_content_in_viewport": 0,
+    "console_errors": []
+  },
+  "accessibility": "Reduced-motion preference removes and cancels entrances. Keyboard focus reveals its container immediately. No hiding without JavaScript. Print visibility restored.",
+  "preserved": "Existing four-artifact sequence, hero film, and flip/hover visuals. Queue/record/packet controls do not receive entrances."
+}
