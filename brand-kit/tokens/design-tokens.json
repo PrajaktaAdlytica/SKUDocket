@@ -1,0 +1,201 @@
+{
+  "meta": {
+    "brand": "SKUDocket",
+    "version": "1.0",
+    "date": "2026-10-13",
+    "direction": "Liberty Atlas + dossier/diagram craft from directions 1 and 2"
+  },
+  "primitive": {
+    "color": {
+      "cream": "#FAF7EF",
+      "white": "#FFFFFF",
+      "paper": "#F2EEE5",
+      "ink": "#263C4C",
+      "ink-deep": "#172B38",
+      "muted": "#5B6870",
+      "muted-soft": "#6B7276",
+      "line": "#D5D2CA",
+      "control-line": "#81888A",
+      "coral": "#AF5A56",
+      "action": "#98443F",
+      "action-hover": "#803531",
+      "blue": "#667F99",
+      "sage": "#D6E1D5",
+      "butter": "#F0E4BA",
+      "focus": "#1F688A",
+      "success": "#31604F",
+      "success-bg": "#E4EFE7",
+      "warning": "#835510",
+      "warning-bg": "#FFF1CF",
+      "danger": "#9D353A",
+      "danger-bg": "#FCE7E7",
+      "info": "#3B617D",
+      "info-bg": "#E7EFF5"
+    },
+    "space": {
+      "0": "0px",
+      "4": "4px",
+      "8": "8px",
+      "12": "12px",
+      "16": "16px",
+      "20": "20px",
+      "24": "24px",
+      "32": "32px",
+      "40": "40px",
+      "48": "48px",
+      "64": "64px",
+      "80": "80px",
+      "96": "96px",
+      "120": "120px",
+      "160": "160px"
+    },
+    "font": {
+      "display": "Source Serif 4",
+      "body": "Public Sans"
+    },
+    "radius": {
+      "none": "0px",
+      "control": "4px",
+      "card": "8px",
+      "pill": "999px"
+    }
+  },
+  "semantic": {
+    "canvas": "{primitive.color.cream}",
+    "surface": "{primitive.color.white}",
+    "surface-muted": "{primitive.color.paper}",
+    "text": "{primitive.color.ink}",
+    "text-secondary": "{primitive.color.muted}",
+    "text-muted": "{primitive.color.muted-soft}",
+    "border": "{primitive.color.line}",
+    "border-control": "{primitive.color.control-line}",
+    "action-primary": "{primitive.color.action}",
+    "action-hover": "{primitive.color.action-hover}",
+    "accent": "{primitive.color.coral}",
+    "focus": "{primitive.color.focus}",
+    "success": "{primitive.color.success}",
+    "success-surface": "{primitive.color.success-bg}",
+    "warning": "{primitive.color.warning}",
+    "warning-surface": "{primitive.color.warning-bg}",
+    "danger": "{primitive.color.danger}",
+    "danger-surface": "{primitive.color.danger-bg}",
+    "info": "{primitive.color.info}",
+    "info-surface": "{primitive.color.info-bg}"
+  },
+  "layout": {
+    "contentMax": 1280,
+    "readingMax": "64ch",
+    "desktopColumns": 12,
+    "tabletColumns": 8,
+    "mobileColumns": 4,
+    "desktopGutter": 32,
+    "mobileGutter": 16,
+    "pageMargins": {
+      "1440": 80,
+      "1024": 40,
+      "768": 24,
+      "390": 20,
+      "360": 16
+    },
+    "sectionPadding": {
+      "desktop": 96,
+      "tablet": 64,
+      "mobile": 48
+    }
+  },
+  "type": {
+    "display": {
+      "size": "clamp(42px,5.2vw,72px)",
+      "line": 1.04,
+      "weight": 600,
+      "tracking": "-0.035em"
+    },
+    "h1": {
+      "size": "clamp(38px,4.5vw,64px)",
+      "line": 1.08,
+      "weight": 600
+    },
+    "h2": {
+      "size": "clamp(30px,3.2vw,48px)",
+      "line": 1.12,
+      "weight": 600
+    },
+    "h3": {
+      "size": "clamp(24px,2.1vw,32px)",
+      "line": 1.18,
+      "weight": 600
+    },
+    "h4": {
+      "size": "24px",
+      "line": 1.25,
+      "weight": 600
+    },
+    "h5": {
+      "size": "20px",
+      "line": 1.3,
+      "weight": 600
+    },
+    "h6": {
+      "size": "18px",
+      "line": 1.4,
+      "weight": 600
+    },
+    "lead": {
+      "size": "20px",
+      "line": 1.5,
+      "weight": 400
+    },
+    "body": {
+      "size": "16px",
+      "line": 1.6,
+      "weight": 400
+    },
+    "ui": {
+      "size": "14px",
+      "line": 1.45,
+      "weight": 400
+    },
+    "caption": {
+      "size": "12px",
+      "line": 1.5,
+      "weight": 400
+    },
+    "eyebrow": {
+      "size": "11px",
+      "line": 1.4,
+      "weight": 600,
+      "tracking": "0.14em"
+    }
+  },
+  "motion": {
+    "micro": "120ms",
+    "control": "180ms",
+    "shutter": "280ms",
+    "flip": "360ms",
+    "chapter": "480ms",
+    "ease": "cubic-bezier(.2,.8,.2,1)",
+    "reduced": "instant state change; no transform or autoplay"
+  },
+  "shadow": {
+    "card": "0 2px 4px rgba(38,60,76,.04), 0 12px 24px rgba(38,60,76,.05)",
+    "raised": "0 3px 8px rgba(38,60,76,.06), 0 24px 48px rgba(38,60,76,.08)",
+    "overlay": "0 12px 56px rgba(23,43,56,.16)"
+  },
+  "charts": {
+    "categorical": [
+      "#263C4C",
+      "#98443F",
+      "#3B617D",
+      "#6D5B2D",
+      "#31604F",
+      "#665477"
+    ],
+    "rules": [
+      "Label every series",
+      "Never infer eligibility or clearance from a chart",
+      "Pie/donut only for mutually exclusive parts of a defined whole",
+      "Provide data tables",
+      "Keep illustration counts separate from real results"
+    ]
+  }
+}

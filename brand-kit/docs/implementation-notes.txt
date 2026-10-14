@@ -1,0 +1,15 @@
+SKUDocket brand kit implementation notes
+
+Open index.html in a modern browser or serve the extracted kit over a local HTTP server. The catalog bundles its data in data.js, fonts and images locally; it has no analytics, remote runtime dependency or backend. styles.css imports tokens/tokens.css. Change authoritative token values first, then update examples that intentionally show source values.
+
+Use the provided SVG signature; do not retype its outlined wordmark. Add favicon.svg and favicon.ico as browser icons, apple-touch-icon.png as the Apple icon, and adapt logos/site.webmanifest paths to the production public root.
+
+Use CSS variables for surfaces, type and components. JSON tokens have primitive, semantic, layout, typography, motion, shadow and chart roles. Tailwind theme is an optional mapping export, not a framework requirement.
+
+charts/chart data is in visuals/chart-data.json. Product fixture is in docs/dashboard-fixture.json. Do not present these as real results. For a future live feed, add original URL/source edition/published/effective/retrieved dates and coverage/licensing status, with stale/unavailable states.
+
+The 31 routes in docs/page-visual-plan.json are contracts for future pages. Each has a hero, supporting assets, CTA, mobile rules and motion. The catalog previews visual recipes; it is not a substitute for a fully implemented website. All five offers need actual pages and coherent navigation in that build.
+
+Keep external side effects outside the synthetic demo. Build consented lead submission separately; do not mark submission successful until storage succeeds. Supply verified LinkedIn/Crunchbase company profile URLs before turning social previews into links. Company, privacy and legal details need actual operator facts.
+
+Production checks: exact SKU/source/date/arithmetic consistency; responsive layouts at360/390/768/1024/1440; contrast and keyboard behavior; no background causing unreadable text; no required hover-only content; reduced-motion completion; file/route/form integrity; font loading and image layout stability; actual source/data licensing. Browser/source evidence for this catalog is summarized in docs/quality-report.json.

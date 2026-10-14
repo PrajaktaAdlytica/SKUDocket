@@ -1,0 +1,342 @@
+[
+  {
+    "url": "https://raw.githubusercontent.com/adobe-fonts/source-serif/release/VAR/SourceSerif4Variable-Roman.ttf",
+    "path": "outputs/skudocket-brand-kit/fonts/SourceSerif4-Roman.ttf",
+    "bytes": 1204208
+  },
+  {
+    "url": "https://raw.githubusercontent.com/adobe-fonts/source-serif/release/VAR/SourceSerif4Variable-Italic.ttf",
+    "path": "outputs/skudocket-brand-kit/fonts/SourceSerif4-Italic.ttf",
+    "bytes": 850036
+  },
+  {
+    "url": "https://raw.githubusercontent.com/adobe-fonts/source-serif/release/LICENSE.md",
+    "path": "outputs/skudocket-brand-kit/licenses/SourceSerif4-OFL.txt",
+    "bytes": 4491
+  },
+  {
+    "url": "https://raw.githubusercontent.com/uswds/public-sans/develop/fonts/variable/PublicSans%5Bwght%5D.ttf",
+    "path": "outputs/skudocket-brand-kit/fonts/PublicSans-Roman.ttf",
+    "bytes": 103316
+  },
+  {
+    "url": "https://raw.githubusercontent.com/uswds/public-sans/develop/fonts/variable/PublicSans-Italic%5Bwght%5D.ttf",
+    "path": "outputs/skudocket-brand-kit/fonts/PublicSans-Italic.ttf",
+    "bytes": 107940
+  },
+  {
+    "url": "https://raw.githubusercontent.com/uswds/public-sans/develop/LICENSE.md",
+    "path": "outputs/skudocket-brand-kit/licenses/PublicSans-OFL.txt",
+    "bytes": 6709
+  },
+  {
+    "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/LICENSE",
+    "path": "outputs/skudocket-brand-kit/licenses/Lucide-LICENSE.txt",
+    "bytes": 3208
+  },
+  {
+    "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/arrow-right.svg",
+    "path": "outputs/skudocket-brand-kit/icons/ui/arrow-right.svg",
+    "bytes": 261
+  },
+  {
+    "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/arrow-left.svg",
+    "path": "outputs/skudocket-brand-kit/icons/ui/arrow-left.svg",
+    "bytes": 262
+  },
+  {
+    "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/arrow-up-right.svg",
+    "path": "outputs/skudocket-brand-kit/icons/ui/arrow-up-right.svg",
+    "bytes": 260
+  },
+  {
+    "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/chevron-down.svg",
+    "path": "outputs/skudocket-brand-kit/icons/ui/chevron-down.svg",
+    "bytes": 236
+  },
+  {
+    "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/chevron-right.svg",
+    "path": "outputs/skudocket-brand-kit/icons/ui/chevron-right.svg",
+    "bytes": 237
+  },
+  {
+    "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/chevron-left.svg",
+    "path": "outputs/skudocket-brand-kit/icons/ui/chevron-left.svg",
+    "bytes": 238
+  },
+  {
+    "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/x.svg",
+    "path": "outputs/skudocket-brand-kit/icons/ui/x.svg",
+    "bytes": 260
+  },
+  {
+    "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/menu.svg",
+    "path": "outputs/skudocket-brand-kit/icons/ui/menu.svg",
+    "bytes": 279
+  },
+  {
+    "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/search.svg",
+    "path": "outputs/skudocket-brand-kit/icons/ui/search.svg",
+    "bytes": 275
+  },
+  {
+    "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/check.svg",
+    "path": "outputs/skudocket-brand-kit/icons/ui/check.svg",
+    "bytes": 239
+  },
+  {
+    "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/plus.svg",
+    "path": "outputs/skudocket-brand-kit/icons/ui/plus.svg",
+    "bytes": 256
+  },
+  {
+    "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/minus.svg",
+    "path": "outputs/skudocket-brand-kit/icons/ui/minus.svg",
+    "bytes": 232
+  },
+  {
+    "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/download.svg",
+    "path": "outputs/skudocket-brand-kit/icons/ui/download.svg",
+    "bytes": 318
+  },
+  {
+    "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/upload.svg",
+    "path": "outputs/skudocket-brand-kit/icons/ui/upload.svg",
+    "bytes": 318
+  },
+  {
+    "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/external-link.svg",
+    "path": "outputs/skudocket-brand-kit/icons/ui/external-link.svg",
+    "bytes": 332
+  },
+  {
+    "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/file-text.svg",
+    "path": "outputs/skudocket-brand-kit/icons/ui/file-text.svg",
+    "bytes": 444
+  },
+  {
+    "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/files.svg",
+    "path": "outputs/skudocket-brand-kit/icons/ui/files.svg",
+    "bytes": 444
+  },
+  {
+    "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/folder-open.svg",
+    "path": "outputs/skudocket-brand-kit/icons/ui/folder-open.svg",
+    "bytes": 401
+  },
+  {
+    "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/package.svg",
+    "path": "outputs/skudocket-brand-kit/icons/ui/package.svg",
+    "bytes": 446
+  },
+  {
+    "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/boxes.svg",
+    "path": "outputs/skudocket-brand-kit/icons/ui/boxes.svg",
+    "bytes": 824
+  },
+  {
+    "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/ship.svg",
+    "path": "outputs/skudocket-brand-kit/icons/ui/ship.svg",
+    "bytes": 539
+  },
+  {
+    "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/landmark.svg",
+    "path": "outputs/skudocket-brand-kit/icons/ui/landmark.svg",
+    "bytes": 432
+  },
+  {
+    "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/route.svg",
+    "path": "outputs/skudocket-brand-kit/icons/ui/route.svg",
+    "bytes": 344
+  },
+  {
+    "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/globe.svg",
+    "path": "outputs/skudocket-brand-kit/icons/ui/globe.svg",
+    "bytes": 331
+  },
+  {
+    "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/map-pin.svg",
+    "path": "outputs/skudocket-brand-kit/icons/ui/map-pin.svg",
+    "bytes": 359
+  },
+  {
+    "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/git-compare.svg",
+    "path": "outputs/skudocket-brand-kit/icons/ui/git-compare.svg",
+    "bytes": 355
+  },
+  {
+    "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/git-branch.svg",
+    "path": "outputs/skudocket-brand-kit/icons/ui/git-branch.svg",
+    "bytes": 313
+  },
+  {
+    "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/list-checks.svg",
+    "path": "outputs/skudocket-brand-kit/icons/ui/list-checks.svg",
+    "bytes": 336
+  },
+  {
+    "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/scan-search.svg",
+    "path": "outputs/skudocket-brand-kit/icons/ui/scan-search.svg",
+    "bytes": 431
+  },
+  {
+    "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/user-round.svg",
+    "path": "outputs/skudocket-brand-kit/icons/ui/user-round.svg",
+    "bytes": 279
+  },
+  {
+    "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/users-round.svg",
+    "path": "outputs/skudocket-brand-kit/icons/ui/users-round.svg",
+    "bytes": 336
+  },
+  {
+    "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/clock.svg",
+    "path": "outputs/skudocket-brand-kit/icons/ui/clock.svg",
+    "bytes": 271
+  },
+  {
+    "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/triangle-alert.svg",
+    "path": "outputs/skudocket-brand-kit/icons/ui/triangle-alert.svg",
+    "bytes": 345
+  },
+  {
+    "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/circle-alert.svg",
+    "path": "outputs/skudocket-brand-kit/icons/ui/circle-alert.svg",
+    "bytes": 332
+  },
+  {
+    "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/info.svg",
+    "path": "outputs/skudocket-brand-kit/icons/ui/info.svg",
+    "bytes": 294
+  },
+  {
+    "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/lock-keyhole.svg",
+    "path": "outputs/skudocket-brand-kit/icons/ui/lock-keyhole.svg",
+    "bytes": 337
+  },
+  {
+    "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/eye.svg",
+    "path": "outputs/skudocket-brand-kit/icons/ui/eye.svg",
+    "bytes": 360
+  },
+  {
+    "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/eye-off.svg",
+    "path": "outputs/skudocket-brand-kit/icons/ui/eye-off.svg",
+    "bytes": 504
+  },
+  {
+    "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/mail.svg",
+    "path": "outputs/skudocket-brand-kit/icons/ui/mail.svg",
+    "bytes": 316
+  },
+  {
+    "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/link.svg",
+    "path": "outputs/skudocket-brand-kit/icons/ui/link.svg",
+    "bytes": 359
+  },
+  {
+    "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/paperclip.svg",
+    "path": "outputs/skudocket-brand-kit/icons/ui/paperclip.svg",
+    "bytes": 344
+  },
+  {
+    "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/sliders-horizontal.svg",
+    "path": "outputs/skudocket-brand-kit/icons/ui/sliders-horizontal.svg",
+    "bytes": 422
+  },
+  {
+    "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/ellipsis.svg",
+    "path": "outputs/skudocket-brand-kit/icons/ui/ellipsis.svg",
+    "bytes": 312
+  },
+  {
+    "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/rotate-ccw.svg",
+    "path": "outputs/skudocket-brand-kit/icons/ui/rotate-ccw.svg",
+    "bytes": 297
+  },
+  {
+    "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/circle-check.svg",
+    "path": "outputs/skudocket-brand-kit/icons/ui/circle-check.svg",
+    "bytes": 278
+  },
+  {
+    "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/circle-x.svg",
+    "path": "outputs/skudocket-brand-kit/icons/ui/circle-x.svg",
+    "bytes": 293
+  },
+  {
+    "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/chart-no-axes-combined.svg",
+    "path": "outputs/skudocket-brand-kit/icons/ui/chart-no-axes-combined.svg",
+    "bytes": 432
+  },
+  {
+    "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/chart-pie.svg",
+    "path": "outputs/skudocket-brand-kit/icons/ui/chart-pie.svg",
+    "bytes": 371
+  },
+  {
+    "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/calendar-days.svg",
+    "path": "outputs/skudocket-brand-kit/icons/ui/calendar-days.svg",
+    "bytes": 483
+  },
+  {
+    "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/shield-alert.svg",
+    "path": "outputs/skudocket-brand-kit/icons/ui/shield-alert.svg",
+    "bytes": 435
+  },
+  {
+    "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/ban.svg",
+    "path": "outputs/skudocket-brand-kit/icons/ui/ban.svg",
+    "bytes": 285
+  },
+  {
+    "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/circle-pause.svg",
+    "path": "outputs/skudocket-brand-kit/icons/ui/circle-pause.svg",
+    "bytes": 328
+  },
+  {
+    "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/play.svg",
+    "path": "outputs/skudocket-brand-kit/icons/ui/play.svg",
+    "bytes": 306
+  },
+  {
+    "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/copy.svg",
+    "path": "outputs/skudocket-brand-kit/icons/ui/copy.svg",
+    "bytes": 339
+  },
+  {
+    "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/book-open.svg",
+    "path": "outputs/skudocket-brand-kit/icons/ui/book-open.svg",
+    "bytes": 387
+  },
+  {
+    "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/notebook-tabs.svg",
+    "path": "outputs/skudocket-brand-kit/icons/ui/notebook-tabs.svg",
+    "bytes": 447
+  },
+  {
+    "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/stamp.svg",
+    "path": "outputs/skudocket-brand-kit/icons/ui/stamp.svg",
+    "bytes": 410
+  },
+  {
+    "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/circle-question-mark.svg",
+    "path": "outputs/skudocket-brand-kit/icons/ui/circle-help.svg",
+    "local_alias": "circle-help"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/list-filter.svg",
+    "path": "outputs/skudocket-brand-kit/icons/ui/filter.svg",
+    "local_alias": "filter"
+  },
+  {
+    "url": "https://brand.linkedin.com/in-logo",
+    "path": "outputs/skudocket-brand-kit/icons/social/linkedin.svg",
+    "source": "Unmodified official inbug-blue-40 geometry"
+  },
+  {
+    "url": "https://about.crunchbase.com/press",
+    "path": "outputs/skudocket-brand-kit/icons/social/crunchbase.svg",
+    "source": "Official webclip raster embedded without recoloring"
+  }
+]

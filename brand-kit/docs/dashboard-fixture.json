@@ -1,0 +1,81 @@
+{
+  "label": "DEMO \u2014 SYNTHETIC DATA",
+  "concept": true,
+  "data_as_of": "2026-10-01",
+  "importer": "Alder Import Co",
+  "sku": "HX-42",
+  "product": "Stainless fastener assembly",
+  "supplier": "Harborside Works",
+  "entry": "EN-104",
+  "owner": "Maya Chen",
+  "reviewer": "Noah Reed",
+  "queue": [
+    {
+      "sku": "HX-42",
+      "supplier": "Harborside Works",
+      "state": "Held"
+    },
+    {
+      "sku": "HX-43",
+      "supplier": "Harborside Works",
+      "state": "Pending"
+    },
+    {
+      "sku": "BR-18",
+      "supplier": "North Quay Components",
+      "state": "Collected"
+    },
+    {
+      "sku": "CL-07",
+      "supplier": "Maple Foundry",
+      "state": "Held"
+    },
+    {
+      "sku": "PN-21",
+      "supplier": "North Quay Components",
+      "state": "Broker review"
+    },
+    {
+      "sku": "WS-09",
+      "supplier": "Maple Foundry",
+      "state": "Exported"
+    },
+    {
+      "sku": "FT-33",
+      "supplier": "Harborside Works",
+      "state": "Rejected"
+    },
+    {
+      "sku": "CP-14",
+      "supplier": "Lakeshore Fabrication",
+      "state": "Pending"
+    },
+    {
+      "sku": "SP-26",
+      "supplier": "Lakeshore Fabrication",
+      "state": "Exported"
+    },
+    {
+      "sku": "RD-11",
+      "supplier": "Maple Foundry",
+      "state": "Broker review"
+    }
+  ],
+  "classification": [
+    {
+      "name": "Rationale A",
+      "assumption": "Component function",
+      "code": null
+    },
+    {
+      "name": "Rationale B",
+      "assumption": "Assembly function",
+      "code": null
+    }
+  ],
+  "origin": "Missing evidence",
+  "screening": "Unresolved potential hit",
+  "broker": "Pending review",
+  "packet": "Draft for discussion",
+  "externalActions": "Disabled"
+}

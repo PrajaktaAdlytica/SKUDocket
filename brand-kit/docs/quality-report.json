@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-13",
+  "scope": "Local brand kit and component catalog; not the future production company site",
+  "counts": {
+    "logo_and_favicon_svg": 22,
+    "ui_icons": 59,
+    "content_figures": 43,
+    "background_shapes": 3,
+    "original_illustrations": 2,
+    "dashboard_patterns": 6,
+    "route_recipes": 31,
+    "unique_hero_assets": 31
+  },
+  "static_checks": {
+    "svg_xml_valid": true,
+    "local_links_and_asset_paths_exist": true,
+    "all_routes_have_hero_and_support_assets": true,
+    "queue_counts_sum_to_ten": true,
+    "conditional_cost_arithmetic_consistent": true,
+    "defined_contrast_pairs_pass": true,
+    "javascript_syntax_check": "node --check passed for catalog.js and data.js"
+  },
+  "browser_checks": {
+    "surface": "Codex in-app browser",
+    "widths": [
+      360,
+      390,
+      768,
+      1024,
+      1440
+    ],
+    "document_horizontal_overflow": false,
+    "bundled_fonts_loaded": [
+      "Source Serif 4",
+      "Public Sans"
+    ],
+    "broken_rendered_images": [],
+    "console_logs": [],
+    "all_six_dashboard_tabs_select_single_panel": true,
+    "keyboard_arrow_tab_selection": true,
+    "queue_held_filter_result": "2 of 10 synthetic records",
+    "evidence_dialog_open_close": true,
+    "flip_card_state_and_aria_expanded": true,
+    "reduced_motion_toggle_transition": "0s",
+    "form_preview_result": "Nothing transmitted or saved",
+    "chart_filter_result": "5 chart figures",
+    "product_page_filter_result": "11 route recipes",
+    "mobile_dashboard": "DOM-based stacked rationales, no miniature desktop image"
+  },
+  "limitations": [
+    "This does not certify the future website or complete an accessibility audit.",
+    "Route recipes are specifications; 31 public pages are not implemented here.",
+    "Lead submission/auth/source feeds/external actions are not connected.",
+    "Verified SKUDocket LinkedIn and Crunchbase URLs are still needed.",
+    "Crunchbase compact SVG embeds an unchanged official raster mark; an original vector wordmark is also supplied."
+  ],
+  "screenshots": [
+    "screenshots/brand-board-desktop.jpg",
+    "screenshots/desktop-dashboard.jpg",
+    "screenshots/mobile-dashboard.jpg"
+  ]
+}

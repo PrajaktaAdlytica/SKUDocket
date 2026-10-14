@@ -1,0 +1,11 @@
+{
+  "name": "skudocket-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SKUDocket website, brand kit, and Harbor to Dossier introduction",
+  "scripts": {
+    "build": "node build.mjs",
+    "dev": "python3 -m http.server 8770 --directory dist",
+    "check": "python3 src/check_site.py"
+  }
+}

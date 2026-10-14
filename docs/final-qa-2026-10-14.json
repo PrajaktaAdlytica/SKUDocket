@@ -1,0 +1,29 @@
+{
+  "release": "GitHub and Vercel handoff",
+  "date": "2026-10-14",
+  "build": {
+    "command": "npm run build",
+    "status": "passed",
+    "routes": 32,
+    "internal_links_checked": 1769,
+    "broken_links_or_assets": 0
+  },
+  "responsive_browser_checks": [
+    {"viewport": "1440 x 900", "horizontal_overflow": false, "intro_before_navigation": true},
+    {"viewport": "768 x 1024", "horizontal_overflow": false, "portrait_intro_for_legible_type": true},
+    {"viewport": "390 x 844", "horizontal_overflow": false, "mobile_navigation": "passed", "sign_in": "passed", "preview_access": "passed", "queue_and_hx42": "passed", "inquiry_preview": "passed"}
+  ],
+  "intro": {
+    "moving_water": "locked-camera pixel comparison in intro/qa/water-motion-check.json",
+    "play_replay_skip": "browser checked",
+    "automatic_hero_handoff": "browser checked",
+    "reduced_motion": "static starting frame and explicit controls implemented",
+    "without_webgl": "still harbor image fallback implemented"
+  },
+  "privacy_and_content": {
+    "synthetic_labels": true,
+    "forms_transmit": false,
+    "robots_indexable": false,
+    "live_authentication": false
+  }
+}

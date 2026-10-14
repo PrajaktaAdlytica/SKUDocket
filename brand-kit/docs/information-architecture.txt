@@ -1,0 +1,558 @@
+SKUDocket should present a focused evidence workspace for US importers with recurring SKUs and multiple suppliers. Its central story is a reviewable dossier: product facts, competing classification rationales, missing evidence, a named reviewer and a dated broker packet.
+
+This is a research and information architecture specification, dated 13 October 2026. It covers the public website, five proposed offer pages, isolated synthetic demo, pilot intake, measurement and design handoff. It does not establish an operating product, legal clearance, customer traction or accepted pricing.
+
+The supplied SKUDocket brief takes precedence over STARTUP_WEBSITE_MASTER_GUIDE.md. SKUDocket replaces Customs Waypoint throughout the proposed customer experience. The old customswaypoint.com availability note does not establish anything about a SKUDocket domain or trademark. No domain is assumed. The guide supplies craft and completeness standards; it does not authorize implementation, deployment, outreach or account creation in this assignment.
+
+## Research findings that shape the architecture
+
+The regulatory research was performed through Perplexity Research, with direct checks of ITA and OFAC pages. One initial regulatory request was rate limited; the retry succeeded. Website structure research used official vendor pages. Rendered pages were also inspected for Ramp, Mercury, Linear and Watershed. Findings below are separated from proposed design decisions.
+
+| Finding | Source | Architecture consequence |
+|---|---|---|
+| Using a broker does not remove the importer's reasonable-care responsibilities. | [CBP Reasonable Care](https://www.cbp.gov/sites/default/files/assets/documents/2018-Mar/icprescare2017revision.pdf), September 2017 guidance | Put importer ownership, source evidence and broker review in the main narrative, not solely in a legal footer. |
+| A proposed classification and a binding ruling are different things. CBP provides a ruling process. | [CBP ruling requirements](https://www.cbp.gov/trade/rulings/eruling-requirements) | Show alternatives and assumptions. Label every proposed code nonbinding. Add a route for unresolved questions to broker or counsel. |
+| HS and US HTS detail are not interchangeable. Tariff information is versioned and changes over time. | [USITC HTS FAQ](https://www.usitc.gov/harmonized_tariff_information/frequently_asked_questions), [HTS information](https://www.usitc.gov/harmonized_tariff_information) | Use “US HTS classification” in detailed screens. Distinguish source edition, publication date, applicable effective date and retrieval time. Never use a decorative “live” badge. |
+| Origin and eligibility for a preferential program are separate questions. Evidence requirements depend on the applicable program. | [CBP USMCA implementing instructions](https://www.cbp.gov/sites/default/files/assets/documents/2020-Jun/USMCA%20Implementing%20Instructions%20-%202020%20Jun%2030%20(Finalv1).pdf) | Separate reported origin, origin review, preference claim and preference evidence. A missing affidavit is a demo exception, not a universal assertion that one affidavit proves eligibility. |
+| Valuation requires more context than an invoice total alone. | [CBP customs value guidance](https://www.cbp.gov/sites/default/files/assets/documents/2020-Feb/ICP-Customs-Value-2006-Final.pdf) | Preserve invoice provenance and questions about assists, royalties, relationships and relevant additions. Keep landed-cost arithmetic separate from a legal customs-value determination. |
+| CSL is an aid built from export-related restrictions; apparent matches require diligence and official-list checks. | [ITA CSL](https://www.trade.gov/consolidated-screening-list) | Do not market it as comprehensive US import screening. Show the originating list, its scope, source link and disposition owner. |
+| OFAC match review compares identifiers and records the investigation; name screening alone is insufficient. Ownership can also matter. | [OFAC match guidance](https://ofac.treasury.gov/faqs/5), [OFAC ownership guidance](https://ofac.treasury.gov/faqs/401) | Give screening its own human disposition log. A false-positive decision closes that specific match, not every sanctions question. |
+| API access and data reuse have conditions and operational dependencies. | [ITA API terms](https://developer.trade.gov/terms-of-service), [service-level information](https://developer.trade.gov/service-level-agreement) | Add a source/coverage register and licensing gate. Verify terms per provider before storing or redistributing content. Do not imply government endorsement. |
+
+The supplied CBP PDF and some CBP/USITC pages did not render in the direct web fetch; their findings are supported here by the official-source Perplexity research, rather than represented as a fresh full-document legal review. Counsel must review final compliance wording and the selected lane.
+
+A material addition from the research: the CSL is not a complete importer-compliance universe. The controls page must identify the selected sources and exclusions. Forced-labor restrictions, admissibility, other government agency requirements, AD/CVD and other measures may require separate investigation. This is a coverage boundary and pilot-scoping issue, not a sixth product.
+
+Evidence is strong for the existence of compliance obligations. It remains weak for SKUDocket-specific demand, attainable automation, incremental time savings and willingness to pay. No vendor capability proves that buyers need this particular product.
+
+## Competitors and observed website patterns
+
+| Reference | Observed structure or market overlap | What SKUDocket should adopt |
+|---|---|---|
+| [Avalara Cross-Border](https://www.avalara.com/us/en/products/global-commerce-offerings/avatax-cross-border.html) | Explains a category/product, workflow, adjacent products and substantive cross-border FAQs. Overlaps with classification and duty/tax calculation. | A product overview plus separate offer detail pages, clear terminology and product-specific FAQs. |
+| [Flexport Customs](https://www.flexport.com/products/customs/) | Customs capabilities, technology, a numbered operational process, FAQs and expert contact. | A concrete sequence and broker vocabulary. SKUDocket's sequence ends at a review packet, before filing or clearance. |
+| [Descartes Customs and Regulatory Compliance](https://www.descartes.com/solutions/customs-and-regulatory-compliance) | A broad capability portfolio, enterprise proof and contact paths. | Distinct capability categories. Avoid copying its suite breadth, customer proof or operational scale. |
+| [Linear Planning](https://linear.app/plan) | Product chapters pair a specific job with UI and linked documents; deeper navigation distinguishes product, resources and pricing. | One recognizable record, evidence relationships and careful information density. |
+| [Watershed Platform](https://watershed.com/platform) | Measure, Report and Act organize the platform story; the page explains lineage, review and controls. | A concise workflow backed by a deeper explanation of sources and decisions. |
+| [Vanta Platform](https://www.vanta.com/trust-management-platform) | Distinguishes interactive tours, demos and capability explanations. | Separate “Explore the demo” from “Discuss a pilot.” |
+| [Ramp](https://ramp.com/) | Product, partner, solution, resource and pricing navigation; strong conversion hierarchy. | Product discovery and clear next actions, scaled down to a concept-stage company. |
+| [Mercury](https://mercury.com/) | Products, solutions, resources, about and pricing navigation; demo access and qualifications close to relevant claims. | Discoverable product paths and contextual limits. Its account-opening funnel does not fit SKUDocket. |
+
+Broker services, counsel, a spreadsheet tariff master and existing trade-management suites remain credible substitutes. Research should ask when these already suffice. Proposed differentiation is a narrow, reusable, versioned evidence trail for repeat SKUs that a broker is willing to use. This is a hypothesis, not a superiority claim.
+
+The transferable website pattern is: clear audience → concrete job → visible product object → separate offers → workflow → controls → commercial next step. Enterprise logo walls, automatic-clearance promises, large ROI counters and integration directories do not transfer without evidence.
+
+## Positioning and brand direction
+
+**Company:** SKUDocket  
+**Category:** Repeat-SKU import evidence workspace  
+**Primary buyer:** US importer-of-record trade compliance lead managing recurring goods across multiple suppliers  
+**Reviewer and distribution partner:** Customs broker  
+**Additional evaluator:** Trade counsel; budget owner to be established during interviews  
+**Tagline:** Prepare repeat-SKU import dossiers for broker review.
+
+**Proposed hero copy**
+
+Prepare repeat-SKU import dossiers for broker review.
+
+Explore a proposed workspace for comparing classification rationales, identifying missing origin evidence and assembling a source-linked packet for your customs broker.
+
+Primary action: **Explore the demo**. Secondary action: **Discuss a 10-SKU pilot**. Persistent adjacent label: **Research-stage concept · Synthetic demo · No customs filing**.
+
+Use plain, document-specific language: “Review the assumption,” “View source,” “Origin evidence missing,” “Return for revision.” Avoid “seamless,” “revolutionize,” “autonomous customs” and “guaranteed compliance.”
+
+### Three visual territories
+
+These are alternative art directions, not approved identities.
+
+| Territory | Composition and character | Typography and color roles | Distinctive product object |
+|---|---|---|---|
+| **1. The Working Dossier — recommended** | Editorial, precise and quietly confident. Asymmetric opening, ruled margins, numbered exhibits, wide evidence panels. | Warm white and ink; deep pine for brand actions; amber for holds. Editorial display serif paired with a readable UI sans; tabular numerals for records. | A dossier unfolds into two competing rationales, then into a source-linked review packet. |
+| **2. The Review Room** | Bright, structured and operational. A workbench fills the hero; sticky chapter labels connect evidence to reviewer decisions. | Cool neutral white, charcoal and restrained aubergine; sans-serif throughout. | A persistent review rail with a named owner, unresolved question and next action. |
+| **3. The Trade Ledger** | Compact, typographic and technical. Ledger rules, index tabs and bold section numerals; minimal imagery. | Pale limestone, dark graphite and oxide accents; wide headings with monospaced identifiers. | A revision ledger that shows exactly what changed between two SKU dossiers. |
+
+Choose territory 1 for the strongest balance of commercial warmth and compliance seriousness. It should feel like a carefully edited business publication surrounding a useful piece of software.
+
+Before high fidelity, create an original SKUDocket wordmark, a compact dossier-tab symbol, monochrome/reverse variants and a favicon derived from that symbol. Do not use a shield/checkmark that suggests certification. Final font licensing, exact color tokens and contrast checks belong to the brand-design phase. Identity assets are specified, not created in this IA assignment.
+
+### Visual references and how to use them
+
+- **Ramp:** adopt left-aligned hierarchy, confident scale and clear navigation. The inspected homepage is light with lime accents and a substantial product scene. Do not reuse its lime identity, AI activity ticker, finance metrics or current headline.
+- **Mercury:** adopt disciplined spacing, a coherent navigation system and qualifications placed near relevant claims. Its inspected hero is photographic and atmospheric; do not use its landscape as SKUDocket's hero direction.
+- **Linear Planning:** adopt the balance of short explanations, large work surfaces and precise UI details. Its inspected page is dark and cinematic; translate the information craft into SKUDocket's light system.
+- **Watershed Platform:** adopt light backgrounds, clear type hierarchy and a workflow organized around understandable jobs. Replace the graph-led visual with a real dossier comparison. Do not duplicate its blue palette or assurance claims.
+- **Flexport Customs:** use for trade terminology, stage sequencing and document-oriented workflow depth; this was a content reference rather than a rendered visual audit.
+- **Vanta:** use for tour versus conversation choices and controls-page depth; this was a content reference rather than a rendered visual audit.
+
+Each major SKUDocket section needs a different composition: editorial hero, evidence spread, five indexed offer rows, three-step workflow, interactive workbench, controls table and a concise pilot panel. Avoid an entire page of interchangeable rounded cards.
+
+## Website information architecture
+
+The site has three connected layers: the marketing website explains the proposition; the isolated demo shows a synthetic workflow; pilot intake measures qualified interest. A shared dossier connects the five offers, but each remains independently selectable and separately testable.
+
+### Primary navigation
+
+**SKUDocket logo · Product ▾ · Who it is for ▾ · How it works · Pilot & pricing · Resources ▾ · Explore demo · Discuss a pilot**
+
+Product menu: overview; all five proposed modules with one-line descriptions; shared evidence workspace. “Proposed modules” appears inside the menu. Use readable job names first, internal names second.
+
+Who it is for: import compliance teams; customs brokers and referral partners. Resources: sample dossier, method and sources, FAQ. About, contact, controls and legal pages are also available in the footer. A restrained “Preview access” link may point to the honest sign-in concept; do not display “Log in” as if there were active customer accounts.
+
+### Route inventory
+
+| Route | Role and required content | Main next action |
+|---|---|---|
+| `/` | Full story, all five offers, synthetic product proof, controls, hypothetical pricing, pilot CTA and FAQ | Explore demo / Discuss a pilot |
+| `/products` | Full five-offer inventory; compare jobs, inputs, outputs and reviewers; select one offer without implying a bundle | Open an offer |
+| `/products/classification-dossiers` | Competing code rationales, supporting facts, assumptions, references and nonbinding review | Compare HX-42 rationales |
+| `/products/origin-evidence` | Origin and preference checklists, missing proof, supplier-specific evidence and uncertainty | Inspect the missing-proof example |
+| `/products/screening-review` | Potential match, originating source list, identifier comparison, human disposition and escalation | Review the synthetic potential hit |
+| `/products/landed-cost` | Editable scenarios, assumptions, excluded costs, tariff dates and a simulated change alert | Compare cost scenarios |
+| `/products/broker-packets` | Invoice, valuation and classification provenance; manifest, unresolved issues and versioned PDF specification | Preview the sample packet |
+| `/workspace` | Shared record model: SKU, supplier, lane, entry reference, documents, exceptions, reviewer and revisions; permission/control concept | Follow the workflow |
+| `/how-it-works` | Present fragmented workflow; Collect → Review → Assemble; responsibility matrix and exception paths | Explore demo |
+| `/for-importers` | Repeat-SKU importer fit, multi-supplier evidence questions, responsibilities, limits and pilot preparation | Discuss a 10-SKU pilot |
+| `/for-brokers` | Broker review needs, packet contents, correction loop, referral routes; no partnership claims | Discuss broker participation |
+| `/demo` | Ungated orientation; DEMO rules, scenario summary and reset control | Open synthetic queue |
+| `/demo/skus` | Ten-record synthetic queue; filters, counts, owner, next action and state labels | Open HX-42 |
+| `/demo/skus/hx-42` | Evidence, classifications, origin, screening, scenarios and review as addressable tabs | Review and export a sample |
+| `/demo/packets/dkt-hx42-v1` | Readable packet/report preview and local synthetic PDF export in future implementation | View provenance / Reset demo |
+| `/pilot` | Ten historical SKUs, one US lane, one selected module, broker participation, scorecard, acceptance/kill gates | Discuss the scoped pilot |
+| `/pricing` | $3,000/ten-SKU pilot and $750–$2,500/month/lane, each labeled hypothetical test pricing; exclusions and pricing questions | Discuss scope; no checkout |
+| `/request-demo` | Human-led walkthrough request; distinguish from ungated product preview | Submit consented request when connected |
+| `/request-pilot` | Qualified pilot intake with selected offer, importer fit and broker participation | Submit consented inquiry when connected |
+| `/waitlist` | Minimal opt-in for research/pilot updates; separate from purchase intent | Join only through explicit consent |
+| `/controls` | Human authority, reversibility, sources, freshness, coverage, data handling, absent functionality and security status | Read method / Ask a question |
+| `/resources` | Small, useful index: sample dossier, method, source register and FAQ; no empty blog | Open a resource |
+| `/resources/sample-dossier` | Public synthetic example, packet manifest, annotations and accessible text | Open matching demo state |
+| `/resources/method-and-sources` | Official references; editions, effective/retrieval dates, coverage exclusions, licensing status and review process | Inspect source / Discuss coverage |
+| `/faq` | Buyer, broker, product, data, pricing and scope questions | Demo or pilot |
+| `/about` | Vision, mission, research stage and why repeat SKUs; only verified company/team facts | Contact |
+| `/contact` | General, broker, data/rights and privacy inquiries; verified contact channel when supplied | Send inquiry when connected |
+| `/sign-in` | Complete access concept with “No customer accounts are active”; sample workspace, access help and pilot request | Enter demo / Request access |
+| `/privacy` | Actual data controller, collection purposes, consent, processors, retention and deletion route before lead collection | Manage or request deletion |
+| `/terms` | Concept-preview terms and product limits subject to counsel review | Contact |
+| `/accessibility` | Accessibility support channel and statement grounded in completed checks | Report an issue |
+
+Demo routes may be states within one implementation rather than separate code pages, but direct links and browser Back must preserve the intended state. Optional cookie controls depend on the chosen analytics stack; they are not a claimed implemented policy.
+
+Do not create empty customer, ROI, funding, careers, integration or status pages. Replace a proof/results destination with the pilot scorecard and synthetic dossier. Explain prospective CSV/ERP/e-commerce inputs in the workspace and pilot pages; no live integration logos. All five offers still receive full detail pages.
+
+### Footer
+
+Four groups: Product (overview and five offers); Workflows (importers, brokers, how it works, workspace); Evaluate (demo, pilot, pricing, sample dossier, method, FAQ); Company (about, contact, controls, privacy, terms, accessibility, preview access). Add a short research-stage label and SKUDocket wordmark. LinkedIn and Crunchbase links appear only after verified SKUDocket profile URLs exist. Do not fabricate an address, legal company suffix or contact email.
+
+### Primary journeys
+
+1. **Importer with a classification question:** home → evidence comparison → classification page → HX-42 demo → pilot scope → offer 1 preselected in inquiry.
+2. **Broker referral:** broker page → packet manifest → sample packet → review/correction controls → broker participation inquiry.
+3. **Screening-focused evaluator:** screening page → unresolved potential hit → evidence comparison → human disposition log → offer 3 inquiry.
+4. **Commercial evaluator:** pricing → exact pilot inclusions and exclusions → evaluation scorecard → qualified request.
+5. **Research-stage visitor:** demo without giving email → method and limits → optional waitlist. Demo access never depends on marketing consent.
+
+Product tabs are not separate products. Personas are not products. Pilot pricing is not a sixth offer.
+
+## Annotated homepage specification
+
+Maintain the supplied narrative order. Put depth on dedicated pages rather than compressing essential caveats into unreadable text.
+
+| Section | Content and purpose | Visual and interaction | Destination |
+|---|---|---|---|
+| 1. Header and status | Brand, navigation and persistent concept status | Slim, quiet status line; accessible dropdowns; mobile menu with all five offers | Complete route map |
+| 2. Hero | Supplied tagline and narrow audience; demo and pilot choices | A legible HX-42 evidence spread, not a full dashboard shrunk to fit; two rationales, one missing-origin notice, source date | Demo / Pilot inquiry |
+| 3. Buyer and problem qualifier | “For US importers managing repeat SKUs across suppliers and a customs broker.” Workflow question: “Across your last 10 repeat-SKU entries, how many needed another document or broker clarification?” No implied answer or benchmark. | Three artifacts—tariff master, supplier document, broker question—joined to one SKU | Importer page |
+| 4. Source-linked evidence example | Show the same product fact used by two competing rationales; identify what would settle the difference | Side-by-side assumption comparison, evidence drawer and real explanatory source links clearly separate from synthetic records | Classification / Method |
+| 5. Five independent offers | All five offers, full one-line intent, proposed-module label and independent pilot selection | Five indexed rows/cards with distinct mini-previews; never hide an offer behind auto-rotation | Five product pages |
+| 6. Three-step reviewed workflow | Collect product/evidence records → review alternatives and exceptions → assemble a broker packet | Dossier moves through three meaningful states; reviewer approval remains explicit | How it works / Workspace |
+| 7. Fictional demo entry | Alder Import Co, HX-42, EN-104 and Harborside Works. Open on the unresolved case | Queue plus opened record; guided demo begins only on user action | Demo |
+| 8. Controls and limits | Human disposition, nonbinding classifications, coverage/date limits, no filing; demonstrate a blocked action and reversal | Compact responsibility/control table and revision example | Controls / Sources |
+| 9. Pilot and test pricing | Ten historical SKUs; selected offer; importer and broker review; hypothetical $3,000 pilot and recurring range | Bounded scope panel and blank evaluation scorecard; no ROI counter, plan upsell or payment control | Pilot / Pricing |
+| 10. Consented waitlist and questions | Minimal email/role/company opt-in; separate route for a detailed pilot request; buyer objections | Proper labels, unchecked consent, clear purpose, privacy/deletion link and accurate pending/error/success states | Waitlist / Request pilot / FAQ |
+| 11. Footer | Full product and company map, status and legal links | Strong type hierarchy and restrained brand detail | Secondary navigation |
+
+Proposed buyer-facing workflow copy: **Collect the evidence. Review what is unresolved. Assemble the broker packet.** This communicates a proposed mechanism, not a proven outcome.
+
+### Product detail page pattern
+
+Each of the five pages has: specific job and proposed-module label; buyer trigger; required inputs; a unique synthetic UI example; step sequence; output sample; limitations/exception behavior; expected reviewer; pilot evaluation method; related offers; FAQ; selected-offer inquiry CTA.
+
+Do not paste the same benefit copy across five pages. Classification centers on competing reasoning; origin on missing proof; screening on identity evidence; cost on conditional arithmetic; packets on provenance and the handoff manifest.
+
+### Supporting page content
+
+**Workspace:** demonstrate the relational structure, file/version history and the difference between prepared, reviewed and exported. Explain local demo behavior versus future permissioned inputs.
+
+**How it works:** compare the existing spreadsheet/email/document process with the proposed review loop. Avoid claiming the new loop is faster until a pilot measures it. Responsibility table: importer supplies/owns facts; preparer organizes evidence; broker reviews; counsel handles questions outside scope; government authority is not replaced.
+
+**Pilot:** include who participates, what ten-SKU sample means, what evidence is needed, how prior entries are compared, and how disagreements are logged. Choose one offer as the commercial test; the full demo illustrates the broader concept without implying an all-five bundle.
+
+**Controls:** separate “demonstrated in synthetic preview,” “proposed for a pilot,” and “not available.” Security architecture, hosting, encryption, retention and access-control statements must describe actual implementations when known; do not invent SOC 2, ISO, GDPR compliance, penetration tests or SLAs.
+
+**About:** vision is reviewable evidence-linked decisions with reversible proposals; mission is a narrow, permissioned repeat-SKU US lane before expansion. No invented founders, history, revenue or team portraits.
+
+**FAQ:** Is this live? Who is this for? Does it replace our broker? Are classifications binding? What does a no-match mean? What if origin evidence is missing? How are source dates shown? What does the packet include? Can it file or send? Are integrations available? Is the price an active offer? What makes a pilot proceed? How do I delete inquiry data?
+
+**Sign-in:** show an intentionally complete preview-access layout, validation/help examples and a route into the synthetic workspace. No password collection, fake SSO, misleading password-reset email or claim that an account was created.
+
+### Mobile and interaction rules
+
+Use native scroll. Collapse menus into labeled expandable groups. Convert the desktop classification comparison into two fully readable stacked hypotheses with the same field order; do not squeeze two columns into 390 pixels. Keep source dates and status visible, and let evidence open in a full-width sheet with a clear Back action.
+
+Use 44-pixel touch targets as a design target; preserve visible focus, labeled errors, non-color status labels and readable body text. No required information exists only on hover. Reduced motion shows complete still states. A change to a hypothesis may animate the affected assumption and revision marker; ordinary scrolling must never approve a review or resolve a screening hit.
+
+## Five offer copy blocks
+
+All five retain the supplied intent. The inherited Trade Desk/Review/Proof/Signal/Report names are optional internal working labels under SKUDocket, not verified trademarks or available plans. Customer-facing navigation uses the clearer job names.
+
+### Offer 1 Classification dossiers
+
+**Proposed module · SKUDocket Trade Desk**  
+**Compare the reasoning behind a proposed classification.**  
+Prepare a SKU classification dossier with competing code rationales, linked product facts and explicit assumptions for broker review. See where interpretations differ and what evidence is still needed. Suggested classifications are nonbinding.
+
+Inputs: product description, composition, function, technical drawings and relevant historical entry evidence.  
+Output: versioned comparison, supporting references, open questions and reviewer decision log.  
+CTA: **Explore classification dossiers**. Pilot CTA selects offer ID 1.
+
+### Offer 2 Origin and preference evidence
+
+**Proposed module · SKUDocket Trade Review**  
+**See what supports an origin or preference claim.**  
+Organize an origin/preference evidence checklist by SKU and supplier. Distinguish available documents from missing, contradictory or unreviewed proof, and keep the applicable preference rule visible.
+
+Inputs: production facts, supplier statements, applicable certifications and program-specific evidence.  
+Output: evidence checklist with gaps, owners, dates and reviewer notes. A completed checklist does not itself establish eligibility.  
+CTA: **Explore origin evidence**. Pilot CTA selects offer ID 2.
+
+### Offer 3 Screening review
+
+**Proposed module · SKUDocket Trade Proof**  
+**Give every potential match a documented review.**  
+Explore counterparty screening with a human disposition log: inspect the originating list, compare identifying details and record why a match remains unresolved, is escalated or is treated as a false positive.
+
+Inputs: permitted counterparty identifiers and dated source-list records.  
+Output: source-linked screening review and human rationale. A list search is not comprehensive sanctions clearance.  
+CTA: **Explore screening review**. Pilot CTA selects offer ID 3.
+
+### Offer 4 Landed cost and tariff changes
+
+**Proposed module · SKUDocket Trade Signal**  
+**Compare costs with the assumptions in view.**  
+Explore landed-cost scenarios and a simulated tariff-change alert. Compare conditional estimates across classification assumptions and source dates, with excluded charges and unresolved inputs shown beside the result.
+
+Inputs: quantities, unit price, valuation assumptions, proposed classification, origin, scenario date and cost components.  
+Output: comparison, change explanation and review task. No guaranteed duty quote, savings claim or live monitoring promise.  
+CTA: **Explore landed-cost scenarios**. Pilot CTA selects offer ID 4.
+
+### Offer 5 Broker handoff packets
+
+**Proposed module · SKUDocket Trade Report**  
+**Give your broker the evidence behind the record.**  
+Assemble a broker handoff packet with invoice, valuation and classification provenance, reviewer notes and unresolved questions. Preserve source versions so the reviewer can trace each proposed datum.
+
+Inputs: the selected SKU's source records and recorded human reviews.  
+Output: a versioned broker-review PDF packet and manifest. Exporting a packet is not transmitting or filing an entry.  
+CTA: **Explore broker packets**. Pilot CTA selects offer ID 5.
+
+## Deterministic demo specification
+
+This is a clickable-demo script and data contract for a later prototype, not an implemented demo. Use client-local synthetic state, resettable to a fixed fixture. No network calls for real screening, filing, payments, supplier messages or ERP/bank writes. The demo may later download a locally generated synthetic packet; it must never send it to a broker.
+
+Persistent labels on every frame and data card: **DEMO — SYNTHETIC DATA** and **CONCEPT PREVIEW**. Every export page includes **Illustrative; not a filing or legal determination**. All organizations, people, documents, amounts, records and outcomes below are invented.
+
+### Scenario and data dictionary
+
+| Field or entity | Fixture or definition |
+|---|---|
+| Importer | IMP-DEMO-01, Alder Import Co |
+| Lane | LANE-DEMO-01, Canada → US, recurring goods; geography is a synthetic scenario and proves no origin or preference |
+| Primary SKU | HX-42, stainless fastener assembly |
+| Entry reference | EN-104, fictional prior-entry reference; no actual filing exists |
+| Supplier | SUP-DEMO-01, Harborside Works |
+| Owner | Maya Chen, fictional importer compliance reviewer |
+| Broker reviewer | Noah Reed, fictional broker-review persona |
+| Dossier | DKT-HX42, version v1 initially; version changes create an audit event |
+| Invoice | INV-HW-104-v1, dated 2026-09-28; 1,000 units × $12 = $12,000 |
+| Core documents | SPEC-HX42-v1; DRAW-HX42-v1; INV-HW-104-v1; PRIOR-EN104-v1; VAL-104-v1 |
+| Missing origin record | ORG-HX42-v1, absent at initial state; owner and next action displayed |
+| Hypotheses | H-A: assess the good as a threaded fastener based on construction; H-B: assess the assembly as presented based on its full components/function. Both are provisional and require detailed facts. |
+| Code field | “US HTS candidate A/B — unassigned in this concept”; do not invent a plausible-looking legal code. Broker/counsel must supply and validate actual candidates before any code-bearing preview is published. |
+| Source types | Official guidance links; separately labeled fictional product evidence; separately labeled simulated tariff and list fixtures |
+| Simulated data dates | Tariff fixture effective 2026-10-01; list fixture as of 2026-10-01 09:00 UTC; scenario reviewed 2026-10-02. These are demo dates, not claimed government feed dates. |
+| Source metadata | source_id, title, source_type, original_url if real, edition/version, published_at, effective_at, retrieved_at, coverage_note, demo_flag |
+| Review metadata | event_id, actor_id, role, action, object_version, previous_state, new_state, timestamp, reason, evidence_refs |
+| Screening metadata | match_id, originating_list, matched_name, identifiers_compared, evidence_refs, disposition, owner, reviewed_at; demo list must be labeled simulated |
+| Status model | Separate classification_status, origin_status, screening_status, valuation_status, packet_status and next_action; never use one “compliant” badge |
+| Permissions | All persons are simulated roles. View, edit assumptions, return, record review and local export only; prohibited external actions cannot be enabled. |
+
+### Ten-record queue fixture
+
+Snapshot: 2026-10-02 09:00 UTC. All records belong to fictional Alder Import Co. Supporting documents use SPEC-[SKU]-v1 and INV-[ENTRY]-v1 conventions; the prototype must seed their content consistently with each row before screenshots are made.
+
+| SKU and entry | Fictional supplier | Queue state | Fictional owner | Next action and dated context |
+|---|---|---|---|---|
+| HX-42 / EN-104 | Harborside Works | Held | Maya Chen | Origin proof and screening review; updated Oct 2 09:00, due Oct 3 16:00 |
+| HX-43 / EN-105 | Harborside Works | Pending review | Maya Chen | Compare revised specification; updated Oct 1 15:00, due Oct 3 12:00 |
+| BR-18 / EN-106 | North Quay Components | Evidence collected | Iris Patel | Check invoice linkage; updated Oct 1 11:00, due Oct 3 15:00 |
+| CL-07 / EN-107 | Maple Foundry | Held | Iris Patel | Missing valuation explanation; updated Oct 1 16:00, due Oct 4 12:00 |
+| PN-21 / EN-108 | North Quay Components | Broker review | Noah Reed | Review rationale; updated Oct 2 08:00, due Oct 3 10:00 |
+| WS-09 / EN-109 | Maple Foundry | Exported | Noah Reed | Packet v1 exported Oct 1 10:00; review next supplier revision |
+| FT-33 / EN-110 | Harborside Works | Rejected proposal | Noah Reed | Product function contradicts suggestion; rejected Oct 1 13:00, revise by Oct 3 14:00 |
+| CP-14 / EN-111 | Lakeshore Fabrication | Pending review | Maya Chen | Supplier-origin inconsistency; updated Oct 2 08:30, due Oct 4 10:00 |
+| SP-26 / EN-112 | Lakeshore Fabrication | Exported | Noah Reed | Packet v2 exported Oct 1 14:00; review next supplier revision |
+| RD-11 / EN-113 | Maple Foundry | Broker review | Iris Patel | Stale tariff fixture; updated Oct 2 08:45, due Oct 3 11:00 |
+
+Displayed queue totals: 10 records; 2 held; 2 pending review; 1 evidence collected; 2 broker review; 2 exported; 1 rejected proposal. These are synthetic record counts, never customer performance statistics. Use explicit UTC labels for fixture timelines.
+
+### Click path and state transitions
+
+| Step and time | Visitor action | Visible result and guard |
+|---|---|---|
+| 1 · 09:00 | Open demo → choose HX-42 | Evidence collected; two hypotheses visible; origin hold; potential screening hit unresolved; packet unreviewed |
+| 2 · 09:02 | Open H-A and H-B assumptions | Side-by-side facts, source links and unsupported assumptions. Neither is marked correct or approved. |
+| 3 · 09:04 | Edit the “complete assembly versus single component” assumption | New proposed revision; prior review becomes outdated. Both alternatives stay visible. “Undo proposal” restores the prior assumption and logs reversal. |
+| 4 · 09:06 | Select “Mark packet ready” | Blocked with explicit missing-origin and unresolved-screening reasons. Offer “View missing evidence,” not a bypass. |
+| 5 · 09:08 | Open missing origin proof | Checklist explains the exact gap; no supplier email is sent. “Load synthetic response” adds ORG-HX42-v1 at 09:09. |
+| 6 · 09:11 | Simulate importer review of origin response | Mark document reviewed for the stated purpose; preference eligibility remains “not assessed/no claim” unless a separate program-specific review is scripted. |
+| 7 · 09:13 | Open potential hit | Harborside Works versus invented Harborside Industrial Works in a simulated list. Show distinct fictional registration IDs DEMO-HW-001 and DEMO-HIW-091 and conflicting address evidence. No real party is alleged to be sanctioned. |
+| 8 · 09:15 | Record simulated human disposition | Reviewer compares the full fixture, records source/evidence and rationale, then chooses “False positive for this match.” Without required evidence/reason, status remains unresolved. This is not blanket clearance. |
+| 9 · 09:17 | Open cost comparison and simulated tariff-change notice | Conditional arithmetic and source dates visible. “Tariff fixture changed” opens a review task; it does not update an approved dossier automatically. |
+| 10 · 09:20 | Enter broker-review persona | Reject unsupported H-B assumption, select H-A as a working hypothesis for the packet, and record remaining classification question. The rejection and alternative remain in history. |
+| 11 · 09:24 | Approve packet for review handoff | Explicitly accept packet completeness for broker discussion, with open questions listed. The designation is not government approval or an entry-release status. |
+| 12 · 09:25 | Preview → export synthetic packet | Local PDF becomes available; packet_status = exported; invoice, valuation and classification provenance included. No email, filing or system write occurs. |
+| 13 | Reopen a decision or reset | Reopening creates v2, invalidates relevant prior approval and leaves v1 in history. Reset restores the entire original fixture, including counts and dates. |
+
+Rejection/edge paths: insufficient screening identifiers → unresolved/escalated, no false-positive disposition; stale source → review required; contradictory source → return for revision; export failure → preserve review state and offer retry without claiming a download succeeded.
+
+**Override semantics:** a human may reject or revise a proposed assumption with a reason and evidence. They cannot turn missing evidence into verified evidence, make a government determination, clear a sanctions restriction or enable external execution. A synthetic unresolved draft may be viewed, but the “reviewed packet” export gate requires the scripted evidence and review steps.
+
+### Landed-cost arithmetic fixture
+
+Assumed customs-value input: $12,000, explicitly unvalidated. Illustrative rates are invented and not tied to actual HTS codes.
+
+| Component | Scenario A | Scenario B |
+|---|---:|---:|
+| Goods | $12,000 | $12,000 |
+| Illustrative duty rate | 4% | 6% |
+| Illustrative duty | $480 | $720 |
+| Freight | $600 | $600 |
+| Insurance | $80 | $80 |
+| Broker fee | $150 | $150 |
+| Included-components subtotal | $13,310 | $13,550 |
+| Subtotal per unit | $13.31 | $13.55 |
+
+Difference = $240, displayed as scenario difference, never savings. Excluded/unassessed: MPF/HMF where applicable, additional tariffs, AD/CVD, other taxes/charges and any required valuation adjustments. Freight is a separate cost line in this illustration, not a statement of legal valuation treatment. Editing quantity recalculates goods and duty; fixed fees remain fixed unless edited. Do not choose a classification by whichever costs less.
+
+### Broker packet PDF specification
+
+US Letter portrait; cover plus manifest, product facts, classification alternatives, origin/preference checklist, screening disposition, valuation/invoice evidence, cost scenarios, broker questions and revision log. Page count may vary, but no required field may be truncated.
+
+Every page: DEMO watermark, dossier/version, generation time and page number. Every material datum: evidence reference and version. Cover: fictional importer/SKU/entry, intended reviewer, packet status and open issues. Hypothetical codes remain unassigned; no CBP form replica, filing receipt or government seal. Links to official general guidance must not imply that government sources validate fictional facts.
+
+## Product screenshot and motion brief
+
+Actual browser captures are a later prototype deliverable. No screenshot attachment was available in the supplied message; the mentioned screenshots/13-website-preview.png cannot be treated as an inspected asset or a deployed product.
+
+### Desktop capture at 1440 by 900
+
+Use a 48-pixel global bar with persistent demo/concept labels. Below it, a 224-pixel queue rail, approximately 824-pixel opened-record region and remaining evidence pane. Avoid squeezing product text below readable size.
+
+The primary capture shows: ten-record queue; HX-42/EN-104 opened; Alder Import Co and Harborside Works; side-by-side hypothesis cards; missing-origin hold; potential-hit banner with simulated list date; source/evidence pane; Maya Chen as owner; Noah Reed as pending reviewer; dated next action. Footer/action bar explicitly says “No sending, filing or ERP/bank writes.” “Mark packet ready” is visibly blocked with reasons.
+
+A second desktop state shows the report/packet view, manifest, reviewer note, unresolved classification question and export status. Keep the context and labels identical across captures.
+
+### Mobile capture at 390 by 844
+
+Compact demo banner and record header at top. Two hypothesis summaries stack vertically with their key assumptions; full content continues below without shrinking text. Missing-origin and screening banners remain visible near the record summary. Source/date and pending owner are readable. A labeled queue button opens the ten-record list; evidence opens as a full-width sheet. The sticky bottom action says “Review blockers” and never covers content.
+
+The exact viewport cannot show the entire dossier legibly. Use one primary 390×844 capture of record/assumption/hold content plus a separate mobile evidence or report capture to verify deeper states. Do not claim a single screenshot proves the full mobile flow.
+
+Alt text: “Synthetic SKUDocket HX-42 dossier showing competing classification assumptions, missing origin evidence and a potential screening match awaiting human review.”
+
+### Motion plan
+
+| Location | Trigger and meaningful change | Reverse and reduced-motion behavior |
+|---|---|---|
+| Hero dossier | Optional user-triggered preview opens evidence layers | Closing restores the summary; reduced motion swaps states immediately |
+| Source example | Select a rationale to highlight its linked document fact | Changing selection highlights the other source; no hover-only content |
+| Five offers | Focus or hover emphasizes the selected row and output preview | Pointer exit restores neutral style; all labels remain visible |
+| Workflow | Scroll reveals Collect, Review and Assemble annotations | Reading remains complete in either direction; no scroll-driven approvals |
+| Demo | User action updates state and audit log | Undo/reopen are explicit; transitions never replace review |
+| Pricing | Select pilot or recurring hypothesis to see assumptions | No animated price counters or personalized pricing fiction |
+
+Short transitions around 150–250 ms are a proposed starting point. Use native scroll, stable layout, restrained shadows, crisp table rules and consistent icon geometry. Design default, hover, focus, pressed, selected, disabled, loading, error and confirmation states. Do not autoplay a sanctions disposition.
+
+## Intake and consent schema
+
+The public site collects inquiry metadata only. No customs entries, invoices, identification documents, supplier records or sensitive raw evidence uploads. A later permissioned pilot needs a separate reviewed data-sharing process.
+
+| Field | Type and requirement | Purpose |
+|---|---|---|
+| email | Email, required | Reply or specifically consented updates |
+| company | Short text, required | Identify the organization; not proof of qualification |
+| role | Enum plus optional other, required | Import compliance, broker, trade counsel, operations, other |
+| request_type | Enum, required | Waitlist, walkthrough, pilot, broker referral, general question |
+| contact_name | Short text, optional | Personalize follow-up |
+| us_importer_of_record | Yes/no/unsure; required for pilot | Scope fit |
+| repeat_sku_band | None, 1–10, 11–100, 101+, unsure | Repeat-work fit without records |
+| supplier_count_band | 1, 2–5, 6+, unsure | Multi-supplier context |
+| broker_participation | Existing broker willing, needs discussion, none, unsure | Review feasibility |
+| selected_offer_id | Enum 1–5; required for pilot | Identify one commercial test; “help me choose” available before qualification |
+| current_process | Spreadsheet, broker portal, suite, mixed, other | Substitute and baseline context |
+| lane_summary | Optional origin-country and US destination scope | Coverage fit; no transaction details |
+| entry_volume_band | Optional band | Work frequency |
+| pilot_budget_status | Unconfirmed, owner identified, budget discussion, proposed amount considered | Commercial qualification without implying payment |
+| sample_permission_status | Not discussed, possible, permission granted separately | No document upload |
+| question | Optional bounded text | Prompt explicitly says not to include sensitive records |
+| contact_consent | Unchecked checkbox, required for inquiry | Purpose-limited permission to respond |
+| updates_consent | Separate unchecked optional checkbox | Research/pilot updates, never bundled with a demo request |
+| privacy_version / consent_at | Recorded on actual submission | Evidence of the notice and choice |
+| source / campaign | Allowlisted UTM values | Source attribution, no raw URL query or sensitive text |
+| lead_id / request_id | Opaque generated IDs | Deduplication and reliable processing |
+
+Waitlist asks only email, company, role and explicit updates consent. Pilot intake uses progressive disclosure; optional detail can follow the initial request. Never reject a legitimate importer merely for using a non-corporate email domain.
+
+Proposed inquiry consent: “I agree that SKUDocket may use these details to respond about the requested research-stage pilot or walkthrough. I understand this is not an operating customs-filing service.” Updates consent: “Email me occasional SKUDocket research and pilot updates. I can unsubscribe.”
+
+Submission states: editable → validating → submitting → confirmed only after actual storage succeeds; error preserves input. Duplicate submission acknowledges an existing request without creating a second qualified lead. In an unconnected prototype, replace Submit with “Preview request” and state “This has not been sent or saved.”
+
+Privacy notice must identify the actual operator and processors, purpose, retention policy, consent withdrawal and a working deletion route before collecting leads. Suggested planning policy: review unconverted inquiry data at 90 days; actual retention must be confirmed and implemented before publication. `/contact?topic=privacy` can be the deletion route once connected. Do not invent a privacy email or claim deletion is automated.
+
+## Analytics event map and research tracking
+
+Measure interest and behavior separately from broker acceptance and payment. The events below are a specification; nothing is instrumented or collecting data in this assignment.
+
+| Event | Exact trigger | Allowed task-specific properties |
+|---|---|---|
+| landing_view | Once per homepage view after the applicable analytics consent choice | page_id, campaign, source |
+| buyer_qualified | After qualification criteria are met and recorded, not merely opening a page | qualification_version, role_group, fit_band, qualification_method |
+| offer_13_selected | Visitor explicitly selects one of the five offers | selected_offer_id = 1–5, placement |
+| demo_open | Visitor begins the synthetic demo | demo_version, entry_step |
+| evidence_view | Evidence pane/document actually opens | synthetic_evidence_id, step_id |
+| override_view | Visitor opens revision/override explanation | demo_version, step_id |
+| price_view | Hypothetical price panel is viewed | price_variant_id, currency, hypothetical = true |
+| pilot_request | A valid pilot inquiry is successfully stored | request_id, selected_offer_id, price_variant_id |
+| consent_submit | Explicit consent choices are successfully recorded | consent_version, purpose_enum, request_id |
+| reviewer_acceptance_recorded | Optional future controlled pilot event based on broker evidence | pseudonymous_pilot_id, accepted_count, reviewed_count |
+| paid_pilot_commitment | Optional future verified commercial milestone | pseudonymous_pilot_id, commitment_status; no card/payment details |
+
+The first nine event names reproduce the brief exactly. Supplemental pilot milestones prevent click metrics from being mistaken for demand.
+
+Shared event properties: event_id, timestamp, anonymous_session_id, page_id, concept_version, allowlisted UTM source/campaign, demo_flag. Do not send emails, company names, free-text forms, source-document content, real SKU/entry identifiers, financial records or full referring URLs to analytics. Keep consent records and lead PII in an appropriately controlled operational store, not generic analytics payloads.
+
+Define buyer qualification as confirmed US-importer/authorized-broker fit, recurring SKUs, multi-supplier context and a plausible review workflow. Store self-reported fit separately from human-confirmed qualification. Use a server-side lead_id and access-controlled normalized contact key to deduplicate; do not place raw email in analytics.
+
+### Future Notion tracking
+
+Metadata only, with links to a separately permissioned evidence system when appropriate. Fields: segment; buyer role; outreach source; interview date; present tool; baseline lane volume; baseline time; permissioned sample count; offer selected 1–5; summarized demo click path; price shown and hypothesis version; pilot budget; budget owner; data-access status; reviewer status; counsel status; preparation baseline; reviewed outcome; false-positive count; omission count; objections; next step; signed paid-pilot status.
+
+Use distinct denominators and definitions for each outcome. Retain qualitative objections, including “current broker process suffices.” No sensitive raw records or sanctions identifiers in Notion.
+
+## Pilot demand test and decision gates
+
+**Bounded starting scope:** ten permissioned historical SKUs from one recurring US import lane, with importer and broker participation. Test one chosen offer first. Prepare versioned evidence, alternate classification rationales and a broker-packet specification; do not file or write to external systems.
+
+Compare against prior entries, but do not assume a historical entry proves correctness. Record the broker-reviewed reasoning and any counsel escalation as the evaluation basis.
+
+| Metric | Definition |
+|---|---|
+| Broker-accepted dossiers per SKU | Number explicitly accepted for use in broker preparation divided by number reviewed; preserve reasons for rejection |
+| Material disagreements | Reviewer-documented differences affecting classification, valuation, origin/preference or screening handling |
+| Missing evidence | Count and type of origin/valuation/product gaps; distinguish discovered gaps from new errors |
+| Time and rework per entry | Same defined preparation/review tasks before versus during pilot; measure importer and broker effort separately |
+| Unresolved holds | Count, reason, owner and age; export must not make a hold disappear |
+| False positives and omissions | Reviewer-labeled cases and their denominator; no accuracy claim without reviewed ground truth |
+| Paid commitment | Signed scoped commitment and agreed commercial terms; show payment separately if later collected through an approved real process |
+
+Proposed operational acceptance gates, to agree before a real pilot: all ten SKUs have traceable source versions and review states; no unreviewed claim is silently promoted; every material disagreement has an owner; brokers can locate the evidence they need; workflow time is measured using an agreed task definition. These are proposed evaluation conditions, not market benchmarks.
+
+**Go only if:** the broker incorporates dossiers into entry preparation, the importer funds a repeat-lane pilot, a usable permissioned SKU feed is available, and legal/data licensing review permits the work. A polished demo or click-through rate never satisfies this gate.
+
+**Pause or halt if:** legal reuse/current maintenance of data cannot be supported; needed lane coverage is missing; unresolved error modes undermine the intended use; the broker will not use the packet; or the current broker process already suffices. If interest exists without willingness to pay, revise scope and repeat discovery rather than project revenue.
+
+The $3,000 ten-SKU pilot and $750–$2,500/month per repeat lane are supplied test hypotheses. No active checkout, automatic renewal, accepted market price or projected million-dollar business is implied. Recurring pricing is a second hypothesis, not a commitment attached to pilot inquiry.
+
+Expansion to additional countries requires local regulatory/content coverage and functioning broker distribution in each market. Do not advertise multi-country support before those prerequisites are met.
+
+### Draft acquisition copy
+
+**Importer interview / LinkedIn draft:** “What evidence is missing on your repeat SKU? We are researching SKUDocket, a proposed way to prepare repeat-SKU import dossiers for broker review. The example uses fictional data. Would a review of ten historical SKUs with your broker help us understand where documents or explanations need rework?”
+
+**Broker referral draft:** “We are testing whether a source-linked dossier makes a repeat SKU easier to review. The proposed packet preserves classification alternatives, missing evidence and valuation provenance. Would you review a synthetic example and tell us what would make it usable in your preparation process?”
+
+**Paid-test headline:** “What evidence is missing on your repeat SKU?”  
+**Body:** “Explore a dated, fictional import dossier: competing classification assumptions, an origin-evidence gap and a human-reviewed screening example. SKUDocket is a concept preview. Pilot pricing is hypothetical.”  
+**CTA:** “Explore the example.”
+
+Acquisition channels: customs brokers, freight-forwarder referrals, importer associations and ERP/e-commerce integrators. Do not claim partner relationships. Proposed experiment cap for later approval: $300 over 14 days in a relevant professional audience, comparing evidence-gap versus broker-packet messages; this is a planning assumption, not authorized ad spend. Evaluate buyer-qualified conversations and verified pilot commitments by source. No guaranteed savings/compliance claims or sensitive-record retargeting. No messages or ads are sent by this assignment.
+
+## Brief coverage and handoff checks
+
+The supplied brief says “all 32 schema keys populated” but does not provide a machine-readable schema or its canonical key names. The following 32-row matrix accounts for the supplied content; it is not a claim of validation against an unavailable original schema.
+
+| Coverage item | Public placement | Specification or completion condition |
+|---|---|---|
+| 1. SKUDocket identity and old-name replacement | All pages | Brand direction; domain/trademark verification remains open |
+| 2. Tagline, vision and mission | Hero, about | Exact tagline; narrow reviewable-evidence mission |
+| 3. US importer buyer and repeat goods | Hero, importer page | Role, multi-supplier qualifier and lane fit |
+| 4. Reasonable-care problem | Problem section, method | Official-source context and importer responsibility |
+| 5. Substitutes and competition | How it works; internal research | Brokers, counsel, spreadsheet, Avalara and suites |
+| 6. Offer 1 classification dossier | Home, product menu and page | Alternative rationale, assumptions and nonbinding labels |
+| 7. Offer 2 origin/preference checklist | Home, product menu and page | Distinct origin and preference states |
+| 8. Offer 3 screening/disposition | Home, product menu and page | Source list, false-positive review and escalation |
+| 9. Offer 4 costs and alerts | Home, product menu and page | Conditional arithmetic, dated data and simulated alert |
+| 10. Offer 5 broker packet | Home, product menu and page | Invoice, valuation and classification provenance |
+| 11. Separate testable modules | Product overview, intake | IDs 1–5; one selected pilot offer; no forced bundle |
+| 12. Proposed module names | Product details | SKUDocket Trade Desk/Review/Proof/Signal/Report retained as optional labels |
+| 13. Hypothetical pilot and recurring prices | Home, pricing | $3,000 and $750–$2,500/month/lane; no checkout |
+| 14. Ten historical SKU MVP | Pilot | One US lane, permissioned inputs, no filing |
+| 15. Concrete product record | Demo | Alder Import Co, HX-42, EN-104, Harborside Works |
+| 16. Eight to twelve realistic sample records | Demo queue | Ten seeded records with coherent statuses and owners |
+| 17. Deterministic flow | Demo script | Evidence → rationale → hold → review → export |
+| 18. Editable assumptions and provenance | Demo/workspace | Source versions, timestamps, revision history |
+| 19. Approval, override and reversibility | Demo/controls | Guarded states, rejected proposal, return and reset |
+| 20. Human screening resolution | Screening demo | Unresolved until explicit evidence-based disposition |
+| 21. Synthetic data and disabled actions | Every demo frame/export | Persistent badges; no send/payment/filing/ERP/bank write |
+| 22. Desktop and mobile screenshots | Home/product media | 1440×900 and 390×844 capture briefs; actual captures deferred to prototype |
+| 23. Source dates, stale data and scope | Product/controls/method | Date model, stale state, licensing and coverage gates |
+| 24. Security/control disclosure | Controls | Proposed versus implemented boundaries; no fabricated certifications |
+| 25. Consented intake and waitlist | Request/waitlist/contact | Field schema, consent, deletion route, errors and no sensitive uploads |
+| 26. Analytics and attribution | Conversion flows | Nine required events, offer ID, UTM, deduplication |
+| 27. Acquisition and LinkedIn | Broker page; internal plan | Referral channels and unsent draft copy |
+| 28. Paid traffic test | Internal plan | Capped proposal, DEMO/pricing disclosure, qualified-demand measures |
+| 29. Validation metrics and purchase decision | Pilot scorecard | Broker acceptance, disagreements, rework, holds and funded commitment |
+| 30. Build and expansion gates | Pilot/about; internal plan | Legal/data coverage, broker adoption, funding; country expansion conditional |
+| 31. Notion tracking and sensitive-data boundary | Internal operations spec | All requested metadata fields; no raw records |
+| 32. Copyright, QA and definition of done | All-page handoff | Original assets/copy, accessible states, all offers, consistent fixture and sourced claims |
+
+### Scope adaptations from the guide
+
+- Plan a complete connected site, but build no website/app in this assignment.
+- Use research/controls and a pilot scorecard instead of fictional customer proof, certifications, funding news or ROI.
+- Retain five separate offer pages even though only one module is selected for the initial paid test.
+- Specify branding before high fidelity; no default template favicon or borrowed logo.
+- Keep sign-in honest as preview access until an actual identity service and customer workspace exist.
+- Provide about, contact, request demo, product screenshots, use cases, clear CTAs and legal destinations.
+- Defer GitHub, Vercel, custom domain connection, business profiles and real lead collection until implementation scope and required account details exist.
+- Treat the supplied historical screenshot mention as a reference description, not a received/verified product screenshot.
+
+### Acceptance for a later website and demo build
+
+All five offers are reachable from home, navigation, product index, dedicated pages and inquiry selection. Every CTA has an appropriate destination. Demo is ungated and separate from live inquiry submission. There are no real customer identifiers, borrowed logos, fabricated endorsements, success counters or operational integrations.
+
+Verify every fixture ID, timestamp, quantity, currency, source reference and arithmetic result across queue, record, screenshot and PDF. Verify invalid assumptions invalidate relevant approval; unresolved screening cannot silently resolve; missing origin does not become verified by pressing override; stale source data shows a review requirement.
+
+Test keyboard access, focus return from evidence sheets, labeled fields/errors, contrast, touch targets, 390-pixel reflow, short screens, 1440-pixel desktop, reduced motion, Back/reset behavior, direct links and local export. Test network behavior to confirm no prohibited external action. Future production QA also checks metadata, branded favicon, no template artifacts, form storage/consent accuracy and published-page parity.
+
+### Outstanding facts to resolve before high fidelity or live pilot work
+
+1. Final brand territory, logo and font/color system.
+2. Actual SKU product facts and broker-reviewed candidate HTS codes. The concept currently specifies alternative reasoning without fabricating legal code recommendations.
+3. Actual pilot lane, volume, baseline error/rework incidence, buyer budget and chosen first offer.
+4. Legal/data licensing review, source coverage and maintainable refresh process.
+5. Company/operator details, verified contact/social links, domain availability and trademark review.
+6. Privacy processor/retention choices and a functioning deletion route before real intake.
+7. The original canonical 32-key schema, if exact import into another system is required.
+8. The referenced historical screenshot, if it is to be compared against the new design.
+
+Research, IA, copy and behavior specifications are complete for planning. Logo assets, wireframes, a clickable implementation, real browser captures, legal sign-off and deployment are future work and are not represented as completed here.

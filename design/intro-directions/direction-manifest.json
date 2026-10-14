@@ -1,0 +1,73 @@
+{
+  "product": "SKUDocket",
+  "created": "2026-10-14",
+  "stage": "Visual directions only; no video or website edits",
+  "display_order": [
+    {
+      "option": 1,
+      "title": "Harbor to Dossier",
+      "storyboard": "01-harbor-to-dossier.png",
+      "camera_sequence": [
+        "Crane down across dawn harbor",
+        "Dolly forward as sources arrive sequentially",
+        "Gentle orbit into classification comparison",
+        "Pull back to draft broker packet"
+      ],
+      "keyframe_seconds": [
+        0,
+        4,
+        8,
+        14
+      ]
+    },
+    {
+      "option": 2,
+      "title": "The Evidence Orbit",
+      "storyboard": "02-the-evidence-orbit.png",
+      "camera_sequence": [
+        "Macro push across product source",
+        "Rise and orbit to connected record",
+        "Dolly between source and review layers",
+        "Pull up as sheets assemble into packet"
+      ],
+      "keyframe_seconds": [
+        0,
+        4,
+        8,
+        14
+      ]
+    },
+    {
+      "option": 3,
+      "title": "The Broker’s Window",
+      "storyboard": "03-the-brokers-window.png",
+      "camera_sequence": [
+        "Wide tracking around harbor-side workroom",
+        "Push into laptop evidence record",
+        "Arc and rack focus through rationale and review history",
+        "Ease out to desk and draft packet"
+      ],
+      "keyframe_seconds": [
+        0,
+        4,
+        8,
+        14
+      ]
+    }
+  ],
+  "planned_duration_seconds": 16,
+  "placement": "In page flow above existing homepage hero",
+  "production_requirements": [
+    "Use existing exact SKUDocket logo and typography",
+    "Rebuild all visible UI as exact typeset graphics; generated copy is concept-only",
+    "Preserve synthetic fixture as of 01 Oct 2026",
+    "Keep DEMO — SYNTHETIC DATA visible",
+    "All rationales provisional; no automatic approval or filing",
+    "Missing ORG-HX42-v1 remains missing, not attached or verified",
+    "Classification return reason concerns unsupported assembly function; origin gap remains a separate issue",
+    "Supplier statement must use its own source identifier, not origin identifier",
+    "Packet is a local draft for broker review with open questions",
+    "Provide Pause, Replay, Skip to hero, muted playback and reduced-motion poster",
+    "Compose mobile framing separately to preserve UI legibility"
+  ]
+}

@@ -1,0 +1,12 @@
+Primary asset and design sources
+Source Serif 4: https://github.com/adobe-fonts/source-serif
+Public Sans: https://github.com/uswds/public-sans
+Lucide: https://github.com/lucide-icons/lucide
+LinkedIn [in] logo: https://brand.linkedin.com/in-logo
+LinkedIn download: https://brand.linkedin.com/downloads
+Crunchbase press/header assets: https://about.crunchbase.com/press
+Hover/focus: https://www.w3.org/WAI/WCAG22/Understanding/content-on-hover-or-focus.html
+Reduced motion: https://www.w3.org/WAI/WCAG21/Techniques/css/C39
+WCAG reference: https://www.w3.org/TR/WCAG22/
+
+Typography optical-size range confirmed from downloaded font binary. Source asset versions/hashes are pinned in asset-inventory.json; upstream main/develop URLs may later change.

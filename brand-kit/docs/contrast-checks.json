@@ -1,0 +1,98 @@
+[
+  {
+    "role": "text",
+    "foreground": "#263C4C",
+    "background": "#FAF7EF",
+    "ratio": 10.7,
+    "minimum": 4.5,
+    "pass": true
+  },
+  {
+    "role": "body",
+    "foreground": "#5B6870",
+    "background": "#FFFFFF",
+    "ratio": 5.74,
+    "minimum": 4.5,
+    "pass": true
+  },
+  {
+    "role": "caption",
+    "foreground": "#6B7276",
+    "background": "#FAF7EF",
+    "ratio": 4.57,
+    "minimum": 4.5,
+    "pass": true
+  },
+  {
+    "role": "primary button",
+    "foreground": "#FFFFFF",
+    "background": "#98443F",
+    "ratio": 6.49,
+    "minimum": 4.5,
+    "pass": true
+  },
+  {
+    "role": "hover button",
+    "foreground": "#FFFFFF",
+    "background": "#803531",
+    "ratio": 8.5,
+    "minimum": 4.5,
+    "pass": true
+  },
+  {
+    "role": "focus ring",
+    "foreground": "#1F688A",
+    "background": "#FAF7EF",
+    "ratio": 5.76,
+    "minimum": 3,
+    "pass": true
+  },
+  {
+    "role": "control border",
+    "foreground": "#81888A",
+    "background": "#FFFFFF",
+    "ratio": 3.61,
+    "minimum": 3,
+    "pass": true
+  },
+  {
+    "role": "warning",
+    "foreground": "#835510",
+    "background": "#FFF1CF",
+    "ratio": 5.73,
+    "minimum": 4.5,
+    "pass": true
+  },
+  {
+    "role": "error",
+    "foreground": "#9D353A",
+    "background": "#FCE7E7",
+    "ratio": 5.9,
+    "minimum": 4.5,
+    "pass": true
+  },
+  {
+    "role": "success",
+    "foreground": "#31604F",
+    "background": "#E4EFE7",
+    "ratio": 6.1,
+    "minimum": 4.5,
+    "pass": true
+  },
+  {
+    "role": "info",
+    "foreground": "#3B617D",
+    "background": "#E7EFF5",
+    "ratio": 5.66,
+    "minimum": 4.5,
+    "pass": true
+  },
+  {
+    "role": "ink section",
+    "foreground": "#FAF7EF",
+    "background": "#172B38",
+    "ratio": 13.63,
+    "minimum": 4.5,
+    "pass": true
+  }
+]

@@ -3,3 +3,9 @@ __pycache__/
 .DS_Store
 node_modules/
 .openai/local/
+intro/node_modules/
+intro/site-preview/
+intro/dist/
+.env
+.env.*
+.vercel/

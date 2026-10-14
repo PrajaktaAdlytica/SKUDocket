@@ -1,0 +1,62 @@
+{
+  "selected_direction": "Harbor to Dossier",
+  "user_refinement": "Animate water",
+  "duration_seconds": 18,
+  "fps": 60,
+  "desktop": [
+    1920,
+    1080
+  ],
+  "mobile": [
+    1080,
+    1440
+  ],
+  "water": "Deterministic masked displacement and moving reflections, independent of camera",
+  "export_state": "Interactive preview; no MP4 exported",
+  "publication_state": "Integrated in GitHub-ready static site; Vercel deployment pending manual connection",
+  "water_validation": {
+    "camera_locked": true,
+    "frames": [
+      0,
+      120
+    ],
+    "fps": 60,
+    "water": {
+      "mean_rgb_difference": 22.212,
+      "maximum_channel_difference": 192
+    },
+    "sky": {
+      "mean_rgb_difference": 0.0,
+      "maximum_channel_difference": 0
+    },
+    "quay": {
+      "mean_rgb_difference": 0.0,
+      "maximum_channel_difference": 0
+    }
+  },
+  "toolchain": {
+    "remotion": "4.0.535"
+  },
+  "checks": {
+    "eslint": "passed without warnings",
+    "typescript": "passed",
+    "desktop_browser": "verified",
+    "mobile_opening": "verified",
+    "mobile_review": "verified",
+    "mobile_end_hold": "frame 1079 retained",
+    "horizontal_overflow": "none in desktop or mobile",
+    "skip_to_hero": "focus moves to hero anchor; native smooth scroll",
+    "replay": "verified; restarts at frame zero and plays through to 1079",
+    "pause": "verified; held at frame 14",
+    "desktop_end_hold": "frame 1079 retained",
+    "headless_still_export": "not completed: renderer target closed; interactive Studio and website previews verified",
+    "auto_scroll_to_hero": {
+      "frame": 1079,
+      "focus": "intro-hero-anchor",
+      "anchor_top": 100
+    }
+  },
+  "white_cast": "removed both full-frame overlays",
+  "navigation": "placed after intro, before hero",
+  "on_completion": "automatically scroll to hero anchor and transfer focus"
+}

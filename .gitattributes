@@ -1,0 +1,3 @@
+# Preserve intentional Markdown line breaks and vendor template strings.
+brand-kit/docs/information-architecture.txt whitespace=-trailing-space
+dist/intro-player.js whitespace=-trailing-space

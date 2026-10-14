@@ -1,0 +1,16 @@
+import React from 'react';
+import {CanvasImage, Easing, interpolate, staticFile, useVideoConfig} from 'remotion';
+import {loadFont} from '@remotion/fonts';
+void loadFont({family:'Source Serif 4',url:staticFile('fonts/SourceSerif4-Roman.woff2'),weight:'400 700'});
+void loadFont({family:'Public Sans',url:staticFile('fonts/PublicSans-Roman.woff2'),weight:'100 900'});
+export const palette={ink:'#263C4C',cream:'#FAF7EF',coral:'#B85E56',muted:'#5A6A73',sage:'#D6E1D5',butter:'#F0E4BA',blue:'#DCE7EB'};
+export const serif='"Source Serif 4", Georgia, serif';
+export const smooth={extrapolateLeft:'clamp',extrapolateRight:'clamp',easing:Easing.bezier(.16,1,.3,1)} as const;
+export const range=(t:number,a:number,b:number)=>interpolate(t,[a,b],[0,1],smooth);
+export const envelope=(t:number,end:number)=>range(t,0,.65)*(1-range(t,end-.55,end));
+export const Icon=({name,size=32}:{name:string;size?:number})=>{const {fps}=useVideoConfig();return <CanvasImage premountFor={fps} src={staticFile(`icons/${name}.svg`)} style={{width:size,height:size}}/>;};
+export const Logo=({reverse=false,width=278}:{reverse?:boolean;width?:number})=>{const {fps}=useVideoConfig();return <CanvasImage premountFor={fps} src={staticFile(`logos/skudocket-logo-${reverse?'reverse':'primary'}.png`)} style={{width}}/>;};
+export const Tag=({children,tint=palette.cream}:{children:React.ReactNode;tint?:string})=><span style={{display:'inline-flex',alignItems:'center',gap:10,fontSize:18,letterSpacing:1.1,padding:'10px 15px',borderRadius:3,background:tint,color:palette.ink}}>{children}</span>;
+export const Paper=({children,style}:{children:React.ReactNode;style?:React.CSSProperties})=><div style={{boxSizing:'border-box',background:'linear-gradient(130deg,#FFFCF5,#F8F4EB)',color:palette.ink,border:'1px solid rgba(38,60,76,.21)',borderRadius:12,boxShadow:'0 28px 80px #182c3a36, 0 2px 8px #182c3a15',...style}}>{children}</div>;
+export const Eyebrow=({children}:{children:React.ReactNode})=><div style={{fontSize:19,fontWeight:500,letterSpacing:3.5,textTransform:'uppercase',color:palette.coral,marginBottom:22}}>{children}</div>;
+export const Headline=({children,size=100}:{children:React.ReactNode;size?:number})=><div style={{fontFamily:serif,fontSize:size,lineHeight:1.04,letterSpacing:-3.8,fontWeight:400}}>{children}</div>;

@@ -1,0 +1,37 @@
+SKUDocket page-by-page visual plan
+
+Route | Hero | Composition | Supporting visuals | CTA
+--- | --- | --- | --- | ---
+/ | Harbor atlas | Centered editorial hero above coastal scene and readable dossier spread | reviewed-workflow, origin-checklist, screening-identifiers, workspace-relationships | Explore the demo
+/products | Five-offer index | Left editorial title and offset five-module index | classification-comparison, origin-checklist, screening-identifiers, landed-cost-bars, broker-packet-provenance | Choose an offer
+/products/classification-dossiers | Comparison spread | Title and source-margin pair above wide two-rationale spread | review-revision, evidence-gap, broker-annotations | Compare HX-42 rationales
+/products/origin-evidence | Missing-proof folio | Checklist-led asymmetric hero with supplier evidence rail | evidence-gap, importer-suppliers, source-dates | Inspect missing proof
+/products/screening-review | Identity comparison | Two identity blocks separated by unresolved-match review rail | human-disposition, controls-matrix, source-dates | Review the example match
+/products/landed-cost | Scenario ledger | Horizontal included-cost comparison with assumption drawer | cost-waterfall, tariff-change-line, review-revision | Compare scenarios
+/products/broker-packets | Packet manifest | Oversized document edge beside source manifest connectors | sample-dossier, broker-annotations, demo-packet | Preview sample packet
+/workspace | Evidence relationships | Wide relationship map and margin glossary | demo-queue, review-revision, controls-matrix | Follow the workflow
+/how-it-works | Reviewed sequence | Three stages across ruled editorial panels | evidence-gap, human-disposition, broker-packet-provenance | Explore the demo
+/for-importers | Supplier lanes | One SKU and three independent supplier evidence paths | origin-checklist, pilot-scorecard, data-licensing | Discuss a pilot
+/for-brokers | Annotated packet | A readable report with precise reviewer margin notes | broker-packet-provenance, review-revision, pilot-scorecard | Discuss broker participation
+/demo | Guided decision | Large start control beside three deterministic steps | demo-queue, demo-record, demo-packet | Open synthetic queue
+/demo/skus | Review queue | Dense but readable product queue; no marketing hero | queue-donut, controls-matrix | Open HX-42
+/demo/skus/hx-42 | Opened record | Record summary, comparison and source pane | classification-comparison, origin-checklist, screening-identifiers, landed-cost-bars | Review blockers
+/demo/packets/dkt-hx42-v1 | Synthetic report | Document cover, manifest and explicit open questions | sample-dossier, broker-packet-provenance | View provenance
+/pilot | Ten-SKU scorecard | Worktable illustration and evaluation matrix with blank outcomes | pricing-scope, data-licensing, controls-matrix | Discuss a scoped pilot
+/pricing | Bounded proposal | Paper proposal hero with selected scope and hypothetical price | pilot-scorecard, product-offers, terms-boundary | Discuss scope
+/request-demo | Walkthrough brief | Minimal agenda left, labeled inquiry form right | product-offers, waitlist-consent | Request a walkthrough
+/request-pilot | Lane intake | Lane scope left; progressive qualification form right | pilot-scorecard, privacy-flow | Discuss pilot fit
+/waitlist | Consented postcard | Compact warm letter layout with separate updates opt-in | privacy-flow | Join research updates
+/controls | Authority matrix | Dark ink title and light control matrix, no certification seals | review-revision, data-licensing, terms-boundary | Inspect source coverage
+/resources | Evidence library | Publication index with three different resource visuals | sample-dossier, source-dates, faq-questions | Open a resource
+/resources/sample-dossier | Annotated evidence | Large numbered document spread with margin links | classification-comparison, broker-packet-provenance | Open matching demo
+/resources/method-and-sources | Source register | Editorial source column and distinct publication/effective/retrieval timeline | data-licensing, origin-checklist, screening-identifiers | Inspect a source
+/faq | Buyer questions | Short heading with question index, no oversized dashboard | terms-boundary, pricing-scope | Discuss a question
+/about | Evidence principles | Original review-desk illustration and three editorial principles | reviewed-workflow, workspace-relationships | Contact SKUDocket
+/contact | Conversation routes | Three inquiry paths with individually illustrated envelopes | privacy-flow | Choose inquiry purpose
+/sign-in | Preview access | Compact branded access panel and honest synthetic-workspace choice | demo-orientation | Enter synthetic workspace
+/privacy | Data purposes | Readable legal hero with small inquiry-data flow | waitlist-consent | Request deletion when connected
+/terms | Scope boundary | Quiet typographic legal hero and bounded-scope figure | controls-matrix | Contact
+/accessibility | Visible focus | Simple editorial statement with focus-path illustration | faq-questions | Report an issue when connected
+
+These are brand-kit recipes and reusable visual assets, not built website routes. Every page uses a distinct hero object/composition. Supporting SVGs may share primitive styles but carry different decisions and content.
