@@ -1,0 +1,38 @@
+{
+  "decode": "passed",
+  "videoCodec": "H.264",
+  "pixelFormat": "yuv420p",
+  "dimensions": [
+    1600,
+    880
+  ],
+  "durationSeconds": 18,
+  "frameRate": 24,
+  "audioTracks": 0,
+  "fileSizeBytes": 1097045,
+  "visualReview": [
+    "poster",
+    "evidence",
+    "rationales",
+    "holds",
+    "review",
+    "packet",
+    "encoded comparison"
+  ],
+  "fontGlyphCoverage": "All 109 shaped text runs contain no missing glyphs; connector arrows use vector geometry.",
+  "canonicalSourceIds": [
+    "INV-HW-104-v1",
+    "SPEC-HX42-v1",
+    "ORG-HX42-v1",
+    "DKT-HX42-v1"
+  ],
+  "states": "Origin held, screening unresolved, both HTS codes unassigned, reviewer pending, draft packet only",
+  "persistentLabels": [
+    "DEMO \u2014 SYNTHETIC DATA",
+    "CONCEPT PREVIEW",
+    "Fixture as of 01 Oct 2026"
+  ],
+  "logo": "Exact supplied approved logo outlines",
+  "mobile": "Supplementary desktop film. Accessible HTML stage meaning is required for mobile.",
+  "externalSideEffects": false
+}

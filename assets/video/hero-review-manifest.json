@@ -1,0 +1,37 @@
+{
+  "width": 1600,
+  "height": 880,
+  "durationSeconds": 18,
+  "fps": 24,
+  "frameCount": 432,
+  "stages": [
+    {
+      "start": 0,
+      "label": "Evidence linked"
+    },
+    {
+      "start": 3.2,
+      "label": "Compare rationales"
+    },
+    {
+      "start": 6.8,
+      "label": "Open holds"
+    },
+    {
+      "start": 10.5,
+      "label": "Human review prompt"
+    },
+    {
+      "start": 14.1,
+      "label": "Packet draft"
+    }
+  ],
+  "source": "All illustrative fixture data; as of 01 Oct 2026",
+  "renderer": "Outlined SVG frames, Sharp rasterization, FFmpeg H.264",
+  "motionPurpose": "Reveal evidence provenance, classification alternatives and unresolved review states in sequence. No decision is approved or screening match resolved.",
+  "posterAlt": "Synthetic SKUDocket dossier for HX-42, showing two unassigned classification hypotheses, a missing origin affidavit and an unresolved potential screening match.",
+  "accessibility": "Parent UI must supply pause/skip and display the poster under reduced motion. This desktop visual is supplementary; mobile explanatory copy and accessible demo remain HTML.",
+  "encoding": "H.264 / yuv420p / silent MP4 / faststart",
+  "fileSizeBytes": 1097045,
+  "frameRate": "24/1"
+}

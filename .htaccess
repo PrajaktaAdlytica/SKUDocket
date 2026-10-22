@@ -1,0 +1,4 @@
+# SKUDocket static website: real directory routes, no SPA rewrite.
+DirectoryIndex index.html
+Options -Indexes
+ErrorDocument 404 /404.html

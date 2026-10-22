@@ -1,0 +1,32 @@
+{
+  "defaultSize": 20,
+  "stroke": 1.75,
+  "sizes": [
+    16,
+    20,
+    24,
+    32
+  ],
+  "source": "Lucide",
+  "rules": [
+    "SVG standalone currentColor",
+    "Use accessible names for icon-only controls",
+    "Pair status with visible text",
+    "Keep social marks original"
+  ],
+  "roles": {
+    "classification": "git-compare",
+    "origin": "list-checks",
+    "screening": "scan-search",
+    "cost": "chart-no-axes-combined",
+    "packet": "file-text",
+    "hold": "triangle-alert",
+    "pending": "clock",
+    "reject": "circle-x",
+    "export": "download",
+    "undo": "rotate-ccw",
+    "source": "book-open",
+    "reviewer": "user-round",
+    "nav": "menu"
+  }
+}

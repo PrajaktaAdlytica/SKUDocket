@@ -1,0 +1,217 @@
+{
+  "classification-comparison": {
+    "file": "visuals/classification-comparison.svg",
+    "title": "Competing classification rationales",
+    "description": "Synthetic concept example; no live product data."
+  },
+  "origin-checklist": {
+    "file": "visuals/origin-checklist.svg",
+    "title": "Origin and preference evidence checklist",
+    "description": "Synthetic concept example; no live product data."
+  },
+  "screening-identifiers": {
+    "file": "visuals/screening-identifiers.svg",
+    "title": "Screening identifier comparison and disposition",
+    "description": "Synthetic concept example; no live product data."
+  },
+  "landed-cost-bars": {
+    "file": "visuals/landed-cost-bars.svg",
+    "title": "Conditional landed-cost scenario comparison",
+    "description": "Synthetic concept example; no live product data."
+  },
+  "broker-packet-provenance": {
+    "file": "visuals/broker-packet-provenance.svg",
+    "title": "Source-linked broker packet manifest",
+    "description": "Synthetic concept example; no live product data."
+  },
+  "workspace-relationships": {
+    "file": "visuals/workspace-relationships.svg",
+    "title": "Evidence workspace relationships",
+    "description": "Synthetic concept example; no live product data."
+  },
+  "reviewed-workflow": {
+    "file": "visuals/reviewed-workflow.svg",
+    "title": "Three-step reviewed evidence workflow",
+    "description": "Synthetic concept example; no live product data."
+  },
+  "queue-pie": {
+    "file": "visuals/queue-pie.svg",
+    "title": "Synthetic queue pie chart",
+    "description": "Synthetic concept example; no live product data."
+  },
+  "queue-donut": {
+    "file": "visuals/queue-donut.svg",
+    "title": "Synthetic queue donut chart",
+    "description": "Synthetic concept example; no live product data."
+  },
+  "tariff-change-line": {
+    "file": "visuals/tariff-change-line.svg",
+    "title": "Illustrative tariff-change line and review alert",
+    "description": "Synthetic concept example; no live product data."
+  },
+  "cost-waterfall": {
+    "file": "visuals/cost-waterfall.svg",
+    "title": "Included-cost waterfall",
+    "description": "Synthetic concept example; no live product data."
+  },
+  "importer-suppliers": {
+    "file": "visuals/importer-suppliers.svg",
+    "title": "One SKU, three supplier evidence paths.",
+    "description": "Synthetic concept example; no live product data."
+  },
+  "broker-annotations": {
+    "file": "visuals/broker-annotations.svg",
+    "title": "Review the packet in context.",
+    "description": "Synthetic concept example; no live product data."
+  },
+  "source-dates": {
+    "file": "visuals/source-dates.svg",
+    "title": "Dates describe different things.",
+    "description": "Synthetic concept example; no live product data."
+  },
+  "review-revision": {
+    "file": "visuals/review-revision.svg",
+    "title": "A proposal can be returned.",
+    "description": "Synthetic concept example; no live product data."
+  },
+  "pilot-scorecard": {
+    "file": "visuals/pilot-scorecard.svg",
+    "title": "Ten SKUs. Reviewed ground truth.",
+    "description": "Synthetic concept example; no live product data."
+  },
+  "pricing-scope": {
+    "file": "visuals/pricing-scope.svg",
+    "title": "A bounded price hypothesis.",
+    "description": "Synthetic concept example; no live product data."
+  },
+  "waitlist-consent": {
+    "file": "visuals/waitlist-consent.svg",
+    "title": "A clear reason to stay in touch.",
+    "description": "Synthetic concept example; no live product data."
+  },
+  "controls-matrix": {
+    "file": "visuals/controls-matrix.svg",
+    "title": "Authority stays with the reviewer.",
+    "description": "Synthetic concept example; no live product data."
+  },
+  "resources-index": {
+    "file": "visuals/resources-index.svg",
+    "title": "A useful evidence library.",
+    "description": "Synthetic concept example; no live product data."
+  },
+  "sample-dossier": {
+    "file": "visuals/sample-dossier.svg",
+    "title": "Follow a datum to its source.",
+    "description": "Synthetic concept example; no live product data."
+  },
+  "faq-questions": {
+    "file": "visuals/faq-questions.svg",
+    "title": "Useful answers, in plain language.",
+    "description": "Synthetic concept example; no live product data."
+  },
+  "about-principles": {
+    "file": "visuals/about-principles.svg",
+    "title": "Reviewable evidence. Human authority.",
+    "description": "Synthetic concept example; no live product data."
+  },
+  "contact-routes": {
+    "file": "visuals/contact-routes.svg",
+    "title": "Choose the right conversation.",
+    "description": "Synthetic concept example; no live product data."
+  },
+  "preview-access": {
+    "file": "visuals/preview-access.svg",
+    "title": "A complete, honest access experience.",
+    "description": "Synthetic concept example; no live product data."
+  },
+  "privacy-flow": {
+    "file": "visuals/privacy-flow.svg",
+    "title": "Purpose-limited inquiry data.",
+    "description": "Synthetic concept example; no live product data."
+  },
+  "terms-boundary": {
+    "file": "visuals/terms-boundary.svg",
+    "title": "The scope is written into the record.",
+    "description": "Synthetic concept example; no live product data."
+  },
+  "accessibility-focus": {
+    "file": "visuals/accessibility-focus.svg",
+    "title": "Focus is a visible part of the design.",
+    "description": "Synthetic concept example; no live product data."
+  },
+  "demo-orientation": {
+    "file": "visuals/demo-orientation.svg",
+    "title": "Explore a fictional decision.",
+    "description": "Synthetic concept example; no live product data."
+  },
+  "request-demo": {
+    "file": "visuals/request-demo.svg",
+    "title": "A walkthrough with a clear purpose.",
+    "description": "Synthetic concept example; no live product data."
+  },
+  "request-pilot": {
+    "file": "visuals/request-pilot.svg",
+    "title": "Begin with a permissioned lane.",
+    "description": "Synthetic concept example; no live product data."
+  },
+  "product-offers": {
+    "file": "visuals/product-offers.svg",
+    "title": "Five jobs. Five independently testable offers.",
+    "description": "Synthetic concept example; no live product data."
+  },
+  "demo-record": {
+    "file": "visuals/demo-record.svg",
+    "title": "An opened record, with evidence beside it.",
+    "description": "Synthetic concept example; no live product data."
+  },
+  "demo-packet": {
+    "file": "visuals/demo-packet.svg",
+    "title": "Export is a packet, not a filing.",
+    "description": "Synthetic concept example; no live product data."
+  },
+  "evidence-gap": {
+    "file": "visuals/evidence-gap.svg",
+    "title": "Missing proof is a visible next action.",
+    "description": "Synthetic concept example; no live product data."
+  },
+  "human-disposition": {
+    "file": "visuals/human-disposition.svg",
+    "title": "Resolve a match with a reason.",
+    "description": "Synthetic concept example; no live product data."
+  },
+  "data-licensing": {
+    "file": "visuals/data-licensing.svg",
+    "title": "Coverage has to be maintainable.",
+    "description": "Synthetic concept example; no live product data."
+  },
+  "demo-queue": {
+    "file": "visuals/demo-queue.svg",
+    "title": "Ten-SKU synthetic review queue",
+    "description": "Synthetic concept example; no live product data."
+  },
+  "card-classification": {
+    "file": "visuals/card-classification.svg",
+    "title": "Classification card visual",
+    "description": "Simplified independent card illustration; synthetic data."
+  },
+  "card-origin": {
+    "file": "visuals/card-origin.svg",
+    "title": "Origin card visual",
+    "description": "Simplified independent card illustration; synthetic data."
+  },
+  "card-screening": {
+    "file": "visuals/card-screening.svg",
+    "title": "Screening card visual",
+    "description": "Simplified independent card illustration; synthetic data."
+  },
+  "card-cost": {
+    "file": "visuals/card-cost.svg",
+    "title": "Cost card visual",
+    "description": "Simplified independent card illustration; synthetic data."
+  },
+  "card-packet": {
+    "file": "visuals/card-packet.svg",
+    "title": "Packet card visual",
+    "description": "Simplified independent card illustration; synthetic data."
+  }
+}

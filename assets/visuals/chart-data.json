@@ -1,0 +1,72 @@
+{
+  "queueDistribution": {
+    "unit": "synthetic records",
+    "total": 10,
+    "values": [
+      {
+        "label": "Held",
+        "value": 2,
+        "color": "#6D5B2D"
+      },
+      {
+        "label": "Pending",
+        "value": 2,
+        "color": "#3B617D"
+      },
+      {
+        "label": "Collected",
+        "value": 1,
+        "color": "#665477"
+      },
+      {
+        "label": "Broker review",
+        "value": 2,
+        "color": "#263C4C"
+      },
+      {
+        "label": "Exported",
+        "value": 2,
+        "color": "#31604F"
+      },
+      {
+        "label": "Rejected",
+        "value": 1,
+        "color": "#98443F"
+      }
+    ]
+  },
+  "costScenarios": {
+    "unit": "USD",
+    "quantity": 1000,
+    "goods": 12000,
+    "freight": 600,
+    "insurance": 80,
+    "brokerFee": 150,
+    "A": {
+      "inventedDutyRate": 0.04,
+      "duty": 480,
+      "includedTotal": 13310
+    },
+    "B": {
+      "inventedDutyRate": 0.06,
+      "duty": 720,
+      "includedTotal": 13550
+    }
+  },
+  "tariffFixture": {
+    "unit": "invented percent",
+    "dates": [
+      "Oct 1",
+      "Oct 2",
+      "Oct 3",
+      "Oct 4"
+    ],
+    "values": [
+      4,
+      4,
+      5,
+      6
+    ],
+    "simulated": true
+  }
+}
